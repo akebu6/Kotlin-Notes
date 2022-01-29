@@ -5,17 +5,20 @@
 Click on a particular link in order to access the respective sections of the notes.
 
 * [Variables](#variables)
+* [Types](#types)
 * [Arrays](#arrays)
 * [String Template](#string-template)
 * [Number Conversion](#number-conversion)
 * [Functions](#functions)
-* [Coding Conventions](#coding-conventions)
 * [Classes Objects](#classes-objects)
+* [Coding Conventions](#coding-conventions)
+* 
 
 ### Variables
    * [var](var)
    * [val](val)
    * [Declarations](declarations)
+### Types
 ### Arrays
 ### String Template
 ### Number Conversion
