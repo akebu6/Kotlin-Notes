@@ -7,10 +7,14 @@
  val b: Boolean =  readLine().toBoolean()
 
 ```
+
 > when using Kotlin 1.3 or older
 
 ```ts
 val b: Boolean = readLine()!!.toBoolean()
 
 ```
+
+#### toBooleanStrict()
+this is used to convert a string to a boolean value.
  
