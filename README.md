@@ -36,6 +36,7 @@ Click on a particular link in order to access the respective sections of the not
 
 Find me at [akebu6](https://twitter.com/akebu6)
 
+### LICENSE
 
 © 2022 Akebu
 
