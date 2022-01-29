@@ -10,7 +10,7 @@
 
 > when using Kotlin 1.3 or older
 
-```ts
+```js
 val b: Boolean = readLine()!!.toBoolean()
 
 ```
