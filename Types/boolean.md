@@ -2,7 +2,7 @@
 
 > only available in Kotlin 1.4 and later
 
-```ts
+```js
 // returns true if input is "true" and false otherwise
  val b: Boolean =  readLine().toBoolean()
 
