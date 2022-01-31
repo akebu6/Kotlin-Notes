@@ -5,6 +5,7 @@
 ### toDouble()
 > when converting an integer to a double
 <p>does not modify the value passed to it but creates a new value of type double</p>
+
 ```js
 val num: Int = 100
 
