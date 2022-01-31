@@ -65,3 +65,29 @@ val shortNumber = floatNumber.toInt().toShort() // correct way
 val byteNumber = doubleNumber.toInt().toByte()  // correct way
 ```
 
+### toString()
+> used when converting a number to it's string representation
+
+```js
+val n = 8     // Int
+val d = 10.09 // Double
+val c = '@'   // Char
+val b = true  // Boolean
+
+val s1 = n.toString() // "8"
+val s2 = d.toString() // "10.09"
+val s3 = c.toString() // "@"
+val s4 = b.toString() // "true"
+```
+
+<p>you can also convert a string into a number as follows</p>
+
+```js
+val n = "8".toInt() // Int
+val d = "10.09".toDouble() // Double
+val b = "true".toBoolean() // Boolean
+```
+
+#### NOTE
+<p>you can note convert a string into a character</p>
+
