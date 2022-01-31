@@ -16,8 +16,7 @@ val b: Boolean = readLine()!!.toBoolean()
 ```
 
 #### toBooleanStrict()
-> available in version 1.4 and higher
-> case senstive
+> available in version 1.4 and higher and is case senstive
 
 this is used to convert a string to a boolean value. It returns true if the string is equal to "true" and false if the string is "false" but will crash with the  `java.lang.IllegalArgumentException` error
 
@@ -37,3 +36,25 @@ println("True".toBooleanStrictOrNull()) // returns null
 println("false".toBooleanStrictOrNull()) // returns false 
 println("False".toBooleanStrictOrNull()) // returns null
 ```
+
+## Logical Operators
+### AND
+binary operator and returns true if both operands equal to true and false otherwise
+### NOT
+unary operator and reverses the boolean value
+### OR
+similar to AND but only checks if one of the two operands is true and false otherwise
+### XOR (exclusive OR)
+returns true if the Boolean operands have different values and false otherwise
+```js
+val b1 = false xor false // false
+val b2 = false xor true  // true
+val b3 = true xor false  // true
+val b4 = true xor true   // false
+```
+
+### Logical Operator Precedence
+- ! for NOT
+- xor for XOR
+- && for AND
+- || for OR
