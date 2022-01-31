@@ -10,6 +10,8 @@ val n: Long = 15
 val res1: Int = d.toInt() // 10
 val res2: Int = n.toInt() // 15
 ```
+  
+<p><strong>type overflow</strong> occurs when the new type is too small to hold the initial value's type</p>
 
 ### toLong()
 > when converting a smaller number into a larger one
@@ -46,3 +48,20 @@ val n1: Int = 125
 val ch: Char = n1.toChar() // '}'
 val n2: Int = ch.toInt()   // 125
 ```
+
+### toByte() and toShort()
+> used when converting a number to an integer of size 8 bits or 16 bytes and should be avoided
+
+<p>is not advisable and should not be used in Kotlin version 1.4 or higher</p>
+
+```js
+val floatNumber = 10f
+val doubleNumber = 1.0
+
+val shortNumber = floatNumber.toShort() // avoid this
+val byteNumber = doubleNumber.toByte()  // avoid this
+
+val shortNumber = floatNumber.toInt().toShort() // correct way
+val byteNumber = doubleNumber.toInt().toByte()  // correct way
+```
+
