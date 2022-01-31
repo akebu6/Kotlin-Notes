@@ -33,6 +33,7 @@ val n: Long = d.toLong() // 12
 
 <p>does not modify the value passed to it but creates a new value of type double</p>
 
+
 ```js
 val num: Int = 100
 
