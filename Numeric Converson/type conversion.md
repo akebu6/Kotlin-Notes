@@ -1,6 +1,12 @@
 ### toInt()
 
 ### toLong()
+> when converting a smaller number into a larger one
+
+```js
+val num: Int = 100
+val bigNum: Long = num.toLong() // 100
+```
 
 ### toDouble()
 > when converting an integer to a double
