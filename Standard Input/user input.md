@@ -43,7 +43,7 @@ print(answer)
 ```
 
 ### user input on one line
-> use the `readLine()!!.split(" ")` function but the output will be on different lines
+> use the `readLine()!!.split(" ")` function but the output will be on different lines and the user does not press ***Enter***
 
 ```js
 val (a, b) = readLine()!!.split(" ")
@@ -51,4 +51,8 @@ println(a)
 println(b)
 ```
 
-<p>note: you can also read upto five lines of input</p>
+<p>note: you can also read upto five values of input</p>
+
+```js
+
+```
