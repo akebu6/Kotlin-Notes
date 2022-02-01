@@ -54,5 +54,9 @@ println(b)
 <p>note: you can also read upto five values of input</p>
 
 ```js
-
+val (a, b, c, d) = readLine()!!.split(" ")
+println(a)
+println(b)
+println(c)
+println(d)
 ```
