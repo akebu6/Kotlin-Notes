@@ -41,3 +41,12 @@ val answer = readLine()!!.toBoolean()
 print("The earth is flat: ")
 print(answer)
 ```
+
+### user input on one line
+> use the `readLine()!!.split(" ")` function but the output will be on different lines
+
+```js
+val (a, b) = readLine()!!.split(" ")
+println(a)
+println(b)
+```
