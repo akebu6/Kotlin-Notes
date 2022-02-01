@@ -17,3 +17,17 @@ print(number)
 ```
 
 <p>use the toLong() function to read larger numbers and toDouble() to read numbers with a decimal point</p>
+
+```js
+// using toLong()
+println("Print any number: ") 
+val number = readLine()!!.toLong() 
+print("You printed the number: ")
+print(number)
+
+// using toDouble()
+println("Print any number: ") 
+val number = readLine()!!.toDouble() 
+print("You printed the number: ")
+print(number)
+```
