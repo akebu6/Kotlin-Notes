@@ -5,3 +5,13 @@
 ```js
 val line = readLine()!!
 ```
+
+### reading numeric input
+> use the toInt() and dot operator
+
+```js
+println("Print any number: ") 
+val number = readLine()!!.toInt() 
+print("You printed the number: ")
+print(number)
+```
