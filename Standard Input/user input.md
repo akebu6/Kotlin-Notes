@@ -30,4 +30,7 @@ println("Print any number: ")
 val number = readLine()!!.toDouble() 
 print("You printed the number: ")
 print(number)
-```
+``
+
+### reading boolean values
+> use the toBoolean() function
