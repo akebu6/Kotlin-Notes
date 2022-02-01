@@ -50,3 +50,5 @@ val (a, b) = readLine()!!.split(" ")
 println(a)
 println(b)
 ```
+
+<p>note: you can also read upto five lines of input</p>
