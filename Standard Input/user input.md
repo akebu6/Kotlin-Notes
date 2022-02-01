@@ -15,3 +15,5 @@ val number = readLine()!!.toInt()
 print("You printed the number: ")
 print(number)
 ```
+
+<p>use the toLong() function to read larger numbers and toDouble() to read numbers with a decimal point</p>
