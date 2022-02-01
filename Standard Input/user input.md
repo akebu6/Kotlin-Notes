@@ -34,3 +34,10 @@ print(number)
 
 ### reading boolean values
 > use the toBoolean() function
+
+```js
+println("The earth is flat. Print true or false:")
+val answer = readLine()!!.toBoolean()
+print("The earth is flat: ")
+print(answer)
+```
