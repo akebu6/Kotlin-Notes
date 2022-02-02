@@ -1,5 +1,5 @@
 ### Converting Int to Long
-> will convert the smaller tipe to the larger type
+> will convert the smaller type to the larger type by default
 
 ```js
 val num: Int = 100
