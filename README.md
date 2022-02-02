@@ -22,6 +22,8 @@ Click on a particular link in order to access the respective sections of the not
 ### Arrays
 ### String Template
 ### Number Conversion
+   * [type conversion](type-converion)
+   * [type coercion](type-coercion)
 ### Functions
    * [Declaring functions](declaring-functions)
 ### Classes & Objects
