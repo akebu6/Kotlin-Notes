@@ -16,10 +16,12 @@ val bigFraction = bigNum - doubleNum // 100000.0, Double
 ```
 
 ## NOTE
-<p>when working with byte and short, the result produced will always be of type Int, unless you convert the result to either byte or short</p>
+<p>1. when working with byte and short, the result produced will always be of type Int, unless you convert the result to either byte or short</p>
 
 ```js
 val hundred: Short = 100
 val five: Byte = 5
 val zero = hundred % five // 0, Int
 ```
+
+<p>2. Type coercion does not occur when a value is put into the variable. For example, val longValue: Long = 10.toInt() is incorrect, because 10 is Int and longValue requires Long type.</p>
