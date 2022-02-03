@@ -14,3 +14,12 @@ val bigNum: Long = 100000
 val doubleNum: Double = 0.0
 val bigFraction = bigNum - doubleNum // 100000.0, Double
 ```
+
+## NOTE
+<p>when working with byte and short, the result produced will always be of type Int, unless you convert the result to either byte or short</p>
+
+```js
+val hundred: Short = 100
+val five: Byte = 5
+val zero = hundred % five // 0, Int
+```
