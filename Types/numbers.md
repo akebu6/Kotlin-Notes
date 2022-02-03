@@ -45,7 +45,7 @@ val uInt = 5u // or "U"
 
 ```js
 // creates an unsigned long value
-val uLong = 5uL // or "U"
+val uLong = 5uL // or "UL"
 ```
 
 **NOTE**
