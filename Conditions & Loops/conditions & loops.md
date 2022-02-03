@@ -13,7 +13,7 @@ for (x in 10..100) println(x)
 for (x in 100 downTo 10) println(x)
 ```
 
-**.. ooerator**
+**.. operator**
 > specifies a range
 ```js
 for (x in 10..100) println(x)
