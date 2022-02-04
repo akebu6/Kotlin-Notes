@@ -36,8 +36,13 @@ for (x in 10..100 step 2) println(x)
 ```
 
 **Extra Notes**
-<p>you can also use a for loop to return items in an array as shown below</p>
+- you can also use a for loop to return items in an array as shown below
 ```js
 // iterates through the items in an array
 for (items in myArray)
+```
+- you can also use a for loop to return the item and its index in an array
+```js
+// returning an item and its index 
+for ((itemm index) in myArray)
 ```
