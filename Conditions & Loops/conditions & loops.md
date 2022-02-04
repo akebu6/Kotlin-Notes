@@ -35,3 +35,9 @@ for (x in 10 until 100) println(x)
 for (x in 10..100 step 2) println(x)
 ```
 
+**Extra Notes**
+<p>you can also use a for loop to return items in an array as shown below</p>
+```js
+// iterates through the items in an array
+for (items in myArray)
+```
