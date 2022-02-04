@@ -5,6 +5,8 @@
 // loops through from 10 all the way to 100
 for (x in 10..100) println(x)
 ```
+## in operator
+> checks if the item is in the given list
 
 **downTo**
 > reverses the order of how items are printed, from to to bottom
