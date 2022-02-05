@@ -1,4 +1,6 @@
 ```js
 // defining a class
-class MyClass()
+class MyClass() {
+  // some code
+}
 ```
