@@ -10,3 +10,6 @@ println(language.length) // returns 6
 <p>
   <strong>Note:</strong> an empty string will return 0
 </p>
+
+### String Concatenation
+> joining two or more strings together use the `+` operator
