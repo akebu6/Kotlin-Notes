@@ -40,16 +40,16 @@ println("Hello, World!".repeat(3))
 > can contain newlines and any other characters. You just need to wrap the text in triple quotes (""")
 ```js
 """
- This is the house that Jack built.
+ This is us dealing with raw strings.
       
-    This is the malt that lay in the house that Jack built.
+    Raw strings are pretty fun to work with.
        
-    This is the rat that ate the malt
-    That lay in the house that Jack built.
+    Use them when you want to add a long string
+    with special characters.
        
-    This is the cat
-    That killed the rat that ate the malt
-    That lay in the house that Jack built.
+    Now leaving raw strings
+    Hope it now makes sense
+    Triple the quotes and you're all done.
 """.trimIndent() // removes the first and the last lines and trim indents
 print(largeString)
 ```
