@@ -21,10 +21,10 @@ println(language.length) // returns 6
 + can be achieved only if the first variable or value is a string
 + the following code will not work
 ```js
-// complier will not complie this code
+// compiler will not complie this code
 val stringPlusNum = 11 + "string"
 
-// complier will compile code
+// compiler will compile code
 val stringPlusNum = "string" + 11 // returns string11
 ```
 + the number is first converted into a string before it is appended
