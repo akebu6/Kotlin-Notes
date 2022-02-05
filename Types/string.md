@@ -16,3 +16,15 @@ println(language.length) // returns 6
 
 **Note:** `str1 + str2` does not produce the same result as `str2 + str1`
 <p>order of how you join strings is important</p>
+
+**Appending A Number to a String**
++ can be achieved only if the first variable or value is a string
++ the following code will not work
+```js
+// complier will not complie this code
+val stringPlusNum = 11 + "string"
+
+// complier will compile code
+val stringPlusNum = "string" + 11 // returns string11
+```
++ the number is first converted into a string before it is appended
