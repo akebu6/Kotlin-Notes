@@ -7,3 +7,6 @@
 val language = "Kotlin"
 println(language.length) // returns 6
 ```
+<p>
+  <strong>Note:</strong> an empty string will return 0
+</p>
