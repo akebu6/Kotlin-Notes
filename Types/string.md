@@ -13,3 +13,6 @@ println(language.length) // returns 6
 
 ### String Concatenation
 > joining two or more strings together use the `+` operator
+
+**Note: `str1 + str2` does not produce the same result as `str2 + str1`
+<p>order of how you join strings is important</p>
