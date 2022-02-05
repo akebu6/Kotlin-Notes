@@ -29,3 +29,9 @@ val stringPlusNum = "string" + 11 // returns string11
 ```
 + the number is first converted into a string before it is appended
 + you can also append a character to a string in the same manner as the character will be first converted into a string
+
+### Repeating a String
+> use the `repeat()` function instead of a loop. just state the number in the parameter
+```js
+println("Hello, World!".repeat(3))
+```
