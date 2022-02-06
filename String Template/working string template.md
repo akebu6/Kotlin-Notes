@@ -14,3 +14,5 @@ For example:
 val language = "Kotlin"
 println("$language has ${language.length} letters in the name")
 ```
+
+**Note:** use curly braces when you want to evaluate an expression
