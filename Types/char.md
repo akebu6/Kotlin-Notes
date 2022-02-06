@@ -34,6 +34,7 @@ val ch: Char = readLine()!!.first()
 #### Note:
 > some things you cannot do with characters
 + you cannot add a number to a symbol
++ you cannot multiply or divide characters
 + you cannot add two characters together
 ```js
 // adding a number to a char
