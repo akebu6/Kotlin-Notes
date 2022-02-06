@@ -8,3 +8,10 @@ val number: Char = '1'
 val space: Char = ' '
 val dollar: Char = '$'
 ```
+
+<p> characters can also be represented using their Unicode value as shown below</p>
+```js
+// the code starts with a \u
+val ch = '\u0040' // it represents '@'
+println(ch) // @
+```
