@@ -16,3 +16,11 @@ val dollar: Char = '$'
 val ch = '\u0040' // it represents '@'
 println(ch) // @
 ```
+
+### Converting Char to Numbers & Vice Versa
+```js
+val ch = 'a'
+println(ch.toInt())   // 97
+val num = 97
+println(num.toChar()) // a
+```
