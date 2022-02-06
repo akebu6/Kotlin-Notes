@@ -24,3 +24,9 @@ println(ch.toInt())   // 97
 val num = 97
 println(num.toChar()) // a
 ```
+
+### Reading Characters
+> use the `.first()` function to read characters from the standard input
+```js
+val ch: Char = readLine()!!.first()
+```
