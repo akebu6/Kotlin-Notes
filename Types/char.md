@@ -30,3 +30,23 @@ println(num.toChar()) // a
 ```js
 val ch: Char = readLine()!!.first()
 ```
+
+#### Note:
+> some things you cannot do with characters
++ you cannot add a number to a symbol
++ you cannot add two characters together
+```js
+// adding a number to a char
+val ch = 'a'
+val ch1 = 1 + ch // Error
+
+// adding two characters together
+val charsSum = 'a' + 'b' // Error
+```
+however, you can find the next or previous character using the `+` and `-` operators as shown below:
+  
+```js
+val ch1 = 'b'
+val ch2 = ch1 + 1 // 'c'
+val ch3 = ch2 - 2 // 'a'
+```
