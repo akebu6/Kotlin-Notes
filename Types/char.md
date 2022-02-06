@@ -43,6 +43,7 @@ val ch1 = 1 + ch // Error
 // adding two characters together
 val charsSum = 'a' + 'b' // Error
 ```
+
 however, you can find the next or previous character using the `+` and `-` operators as shown below:
   
 ```js
@@ -50,3 +51,14 @@ val ch1 = 'b'
 val ch2 = ch1 + 1 // 'c'
 val ch3 = ch2 - 2 // 'a'
 ```
+you can also use the `++` and `--` in their postfix and prefix to work with characters as well as the `=` combined with `+` or `-`
+```js
+var ch = 'A'
+
+ch += 10
+println(ch)   // 'K'
+println(++ch) // 'L'
+println(++ch) // 'M'
+println(--ch) // 'L'
+```
+
