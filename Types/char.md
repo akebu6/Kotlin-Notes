@@ -63,3 +63,5 @@ println(++ch) // 'M'
 println(--ch) // 'L'
 ```
 
+**note:** you can also use escape sequences by enclosing them in single quotes and a backslash.
+
