@@ -66,4 +66,16 @@ println(--ch) // 'L'
 **note:** you can also use escape sequences by enclosing them in single quotes and a backslash.
 
 ### Processing Characters
++ `isDigit()` returns true if the given character represents a digit ('1', '2', etc); otherwise, false;
++ `isLetter()` returns true if the given character represents a letter ('a', 'B', 'm', etc); otherwise, false;
++ `isLetterOrDigit()` returns true if the given character represents a letter or a digit; otherwise, false;
++ `isWhitespace()` returns true if the given character represents a whitespace (' ', or '\t', or '\n'); otherwise, false;
++ `isUpperCase()` returns true if the given character is an uppercase character; otherwise, false;
++ `isLowerCase()` returns true if the given character is a lowercase character; otherwise, false;
++ `toUpperCase()` returns the uppercase form of the given character (before Kotlin 1.5; you shouldn't use it nowadays);
++ `uppercaseChar()` returns the uppercase form of the given character (since Kotlin 1.5);
++ `uppercase()` returns a String with the uppercase form of the given character (since Kotlin 1.5);
++ `toLowerCase()` returns the lowercase form of the given character (before Kotlin 1.5; you shouldn't use it nowadays);
++ `lowercaseChar()` returns the lowercase form of the given character (since Kotlin 1.5);
++ `lowercase()` returns a String with the lowercase form of the given character (since Kotlin 1.5).
 
