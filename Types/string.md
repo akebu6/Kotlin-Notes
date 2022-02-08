@@ -1,5 +1,6 @@
 ### What is a String?
 + a sequence of zero or more characters enclosed by double quotes
++ it is immutable
 
 ### Length of a String
 > use the .length to get the length of a string
