@@ -64,4 +64,5 @@ there are several ways of accessing single characters of a string:
 val greeting = "Hello"
 
 println(greeting[1])
+println(greeting.length - 3)
 ```
