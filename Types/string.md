@@ -53,3 +53,15 @@ println("Hello, World!".repeat(3))
 """.trimIndent() // removes the first and the last lines and trim indents
 print(largeString)
 ```
+
+### Accessing Characters
+there are several ways of accessing single characters of a string:
++ using the array notation 
++ using the `first()` function (returns the first character)
++ using the `last()` function (returns the last character)
++ using the `lastIndez()` function (returns the last character's index)
+```js
+val greeting = "Hello"
+
+println(greeting[1])
+```
