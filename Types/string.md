@@ -66,3 +66,11 @@ val greeting = "Hello"
 println(greeting[1])
 println(greeting.length - 3)
 ```
+
+### Empty String
+> use the `isEmpty()` function to check if a string is empty
+```js
+val emptyString = ""
+println(emptyString.length == 0) //true
+println(emptyString.isEmpty()) //true
+```
