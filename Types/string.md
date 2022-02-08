@@ -75,3 +75,15 @@ val emptyString = ""
 println(emptyString.length == 0) //true
 println(emptyString.isEmpty()) //true
 ```
+
+### Comparing Strings
+> use the `==` and the `!=` 
+```js
+val first = "first"
+val second = "second"
+var str = "first"
+
+println(first == str)    // true
+println(first == second) // false
+println(first != second) // true
+```
