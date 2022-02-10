@@ -11,3 +11,10 @@ the single if statement's code block only executes provided that the expression 
 
 ### if-else-cases
 > includes an extension of the `else` clause
+```js
+if (expression) {    
+    // do something
+} else {
+    // do something else
+}
+```
