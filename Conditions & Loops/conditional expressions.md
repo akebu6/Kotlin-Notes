@@ -21,7 +21,7 @@ if (expression) {
 the `if` clause is evaluated first and if the condition is true then the code inside is executed, otherwise the code inside the else clause will be executed
 
 ### The if-else-if-cases
-> contains many if-else-if cases
+> contains many if-else-if cases and an else clause at the end
 ```js
 if (expression0) {
     // do something
