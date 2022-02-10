@@ -19,3 +19,16 @@ if (expression) {
 }
 ```
 the `if` clause is evaluated first and if the condition is true then the code inside is executed, otherwise the code inside the else clause will be executed
+
+### The if-else-if-cases
+> contains many if-else-if cases
+```js
+if (expression0) {
+    // do something
+} else if (expression1) {
+    // do something else 1
+// ...
+} else if (expressionN) {
+    // do something else N
+}
+```
