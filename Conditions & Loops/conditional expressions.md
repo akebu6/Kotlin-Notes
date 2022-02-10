@@ -48,4 +48,16 @@ if (n % 2 == 0) {
 ```
 
 ### Condition is an expression
-> 
+> As a regular expression, it can return a value (result) of computations. The result must be the last expression in a body.
+```js
+val max = if (a > b) {
+    println("Choose a")
+    a
+} else {
+    println("Choose b")
+    b
+}
+
+// if all the bodies contain a single statement then you can ommit the curly brackets
+val max = if (a > b) a else b
+```
