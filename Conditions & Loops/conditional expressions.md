@@ -32,3 +32,17 @@ if (expression0) {
     // do something else N
 }
 ```
+
+### Nested If's
+> you can nest one if expression into the body of another one
+```js
+if (n % 2 == 0) {
+    if (n % 3 == 0) {
+        println("The number can be divided by 6")
+    } else {
+        println("The number can be divided by 2")
+    }
+} else {
+    println("The number cannot be divided by 2")
+}
+```
