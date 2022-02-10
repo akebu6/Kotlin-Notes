@@ -6,3 +6,5 @@ if (expression) {
     // body: do something
 }
 ```
+
+the single if statement's code block only executes provided that the expression evaluates to true and nothing happen if it evaluates to false
