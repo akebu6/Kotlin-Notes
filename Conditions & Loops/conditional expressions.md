@@ -1,5 +1,5 @@
 ## If Expressions
-> checks the program and performs an action depending on the boolean
+> in Kotlin if is an expression, not a statement. It checks the program and performs an action depending on the boolean
 ```js
 // working with if statemnts
 if (expression) {
@@ -46,3 +46,6 @@ if (n % 2 == 0) {
     println("The number cannot be divided by 2")
 }
 ```
+
+### Condition is an expression
+> 
