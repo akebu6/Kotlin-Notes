@@ -18,3 +18,4 @@ if (expression) {
     // do something else
 }
 ```
+the `if` clause is evaluated first and if the condition is true then the code inside is executed, otherwise the code inside the else clause will be executed
