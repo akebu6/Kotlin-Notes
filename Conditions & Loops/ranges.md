@@ -21,3 +21,8 @@ val withinExclRight = c in a..b - 1 // a <= c && c < b
 ```js
 val notWithin = 100 !in 10..99 // true
 ```
+
+> combining ranges using logical operators
+```js
+val within = c in 5..10 || c in 20..30 || c in 40..50 // true if c is within at least one range
+```
