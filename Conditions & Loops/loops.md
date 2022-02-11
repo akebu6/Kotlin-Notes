@@ -46,3 +46,11 @@ for (items in myArray)
 // returning an item and its index 
 for ((itemm index) in myArray)
 ```
+
+## Repeat Function
+> used when you want to repeat a statement multiple times
+```js
+repeat(n) {
+    // statements
+}
+```
