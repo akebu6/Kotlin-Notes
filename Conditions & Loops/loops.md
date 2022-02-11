@@ -106,6 +106,19 @@ while (condition) {
 }
 ```
 
+### Scanner
+```js
+import java.util.*
+
+fun main() {
+    val scanner = Scanner(System.`in`)
+    while (scanner.hasNext()) {
+        val next = scanner.next()
+        println(next)
+    }
+}
+```
+
 ### infinity loop
 > loops that run forever until memory finishes
 ```js
