@@ -96,3 +96,12 @@ fun main() {
     println(sum)
 }
 ```
+
+## while loop
+> is a pre-test loop
+If the condition is true, the loop initiates the statements. They are repeated until the condition becomes false
+```js
+while (condition) {
+    // body: do something repetitive
+}
+```
