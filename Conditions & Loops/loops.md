@@ -133,5 +133,5 @@ If the condition is true, it repeats the loop until the condition becomes false
 ```js
 do {
     // body: do something
-}
+} while (condition)
 ```
