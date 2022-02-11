@@ -54,3 +54,4 @@ repeat(n) {
     // statements
 }
 ```
+`n` represents the number of times the loop will execute. if it is a neagtive number, the statements will be ignored
