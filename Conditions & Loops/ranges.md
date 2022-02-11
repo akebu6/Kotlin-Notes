@@ -32,3 +32,12 @@ val within = c in 5..10 || c in 20..30 || c in 40..50 // true if c is within at 
 val range = 100..200
 println(300 in range) // false
 ```
+
+> working with ranges other than numbers
+```js
+println('b' in 'a'..'c') // true
+println('k' in 'a'..'e') // false
+
+println("hello" in "he".."hi") // true
+println("abc" in "aab".."aac") // false
+```
