@@ -16,3 +16,8 @@ println(20 in 5..15) // false
 // subtract 1 from the range
 val withinExclRight = c in a..b - 1 // a <= c && c < b
 ```
+
+#### checking if a value is not in the range
+```js
+val notWithin = 100 !in 10..99 // true
+```
