@@ -45,3 +45,19 @@ fun main() {
     println(get3()) // 3
 }
 ```
+
+## Note
+Since Kotlin 1.4, you can put a comma at the end of the parameters list. It can be very useful if you have a lot of arguments or use multi-line syntax, 
+because you may easily copy-paste variables:
+```js
+fun sum(a: Int, b: Int, ): Int { // you can easily add some arguments
+    // 
+}
+
+fun max(
+    a: Int,
+    b: Int,
+): Int { // you can swap arguments without worrying about commas
+    // 
+}
+```
