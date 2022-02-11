@@ -52,6 +52,13 @@ for (ch in 'a'..'c') {
     println(ch)
 }
 ```
+- iterating through strings
+```js
+val str = "Hello!"
+for (ch in str) {
+    println(ch)    
+}
+```
 
 ## Repeat Function
 > used when you want to repeat a statement multiple times
