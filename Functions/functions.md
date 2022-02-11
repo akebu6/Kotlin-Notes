@@ -61,3 +61,26 @@ fun max(
     // 
 }
 ```
+
+### Return Type
+there are two ways to declare a function that does not return anything
+1. omit the return type part:
+```js
+/**
+ * The function prints the values of a and b
+ */
+fun printAB(a: Int, b: Int) {
+    println(a)
+    println(b)
+}
+```
+
+2. specify the special `Unit` type as the return type:
+```js
+/**
+ * The function prints the sum of a and b
+ */
+fun printSum(a: Int, b: Int): Unit {
+    println(a + b)
+}
+```
