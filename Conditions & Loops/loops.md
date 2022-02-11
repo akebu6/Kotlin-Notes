@@ -46,6 +46,12 @@ for (items in myArray)
 // returning an item and its index 
 for ((itemm index) in myArray)
 ```
+- you can also loop through characters
+```js
+for (ch in 'a'..'c') {
+    println(ch)
+}
+```
 
 ## Repeat Function
 > used when you want to repeat a statement multiple times
