@@ -26,3 +26,9 @@ val notWithin = 100 !in 10..99 // true
 ```js
 val within = c in 5..10 || c in 20..30 || c in 40..50 // true if c is within at least one range
 ```
+
+> you can also assign a range to a variable
+```js
+val range = 100..200
+println(300 in range) // false
+```
