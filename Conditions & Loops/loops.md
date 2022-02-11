@@ -55,3 +55,19 @@ repeat(n) {
 }
 ```
 `n` represents the number of times the loop will execute. if it is a neagtive number, the statements will be ignored
+
+### Reading and processing data in a loop
+you can read data from the standard input, declare variables and even perform calculations inside the repeat statement.
+```js
+fun main() {    
+    val n = readLine()!!.toInt()
+    var sum = 0
+    
+    repeat(n) {
+        val next = readLine()!!.toInt()
+        sum += next
+    }
+    
+    println(sum)
+}
+```
