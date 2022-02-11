@@ -84,3 +84,13 @@ fun printSum(a: Int, b: Int): Unit {
     println(a + b)
 }
 ```
+
+### Single-expression functions
+> If a function returns a single expression, you can write it without curly braces:
+```js
+fun sum(a: Int, b: Int): Int = a + b
+
+fun sayHello(): Unit = println("Hello")
+
+fun isPositive(number: Int): Boolean = number > 0
+```
