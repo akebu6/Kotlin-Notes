@@ -126,3 +126,12 @@ while (true) {
     // body: do something indefinitely
 }
 ```
+
+## do..while loop
+> post-test loop
+If the condition is true, it repeats the loop until the condition becomes false
+```js
+do {
+    // body: do something
+}
+```
