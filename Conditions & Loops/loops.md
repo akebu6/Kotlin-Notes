@@ -105,3 +105,11 @@ while (condition) {
     // body: do something repetitive
 }
 ```
+
+### infinity loop
+> loops that run forever until memory finishes
+```js
+while (true) {
+    // body: do something indefinitely
+}
+```
