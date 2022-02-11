@@ -16,3 +16,32 @@ A function has the following components:
 - the type of the return value (optional);
 - a body that contains statements and expressions;
 - the keyword return followed by the result (also optional).
+
+```js
+/**
+ * The function returns its argument
+ */
+fun identity(a: Int): Int {
+    return a
+}
+
+/**
+ * The function returns the sum of two Ints
+ */
+fun sum(a: Int, b: Int): Int {
+    return a + b
+}
+
+/**
+ * The function just returns 3
+ */
+fun get3(): Int {
+    return 3
+}
+
+fun main() {
+    println(identity(1000)) // 1000
+    println(sum(200, 300)) // 500    
+    println(get3()) // 3
+}
+```
