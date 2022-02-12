@@ -20,4 +20,4 @@ println(mutableListB)
 val mutableListC = mutableListOf<Boolean>()
 println("Empty list $mutableListC")
 ```
-+ the `<>` are used to specify the type of the elements
++ the `<>` are used to explicitly specify the type of the elements
