@@ -21,3 +21,11 @@ val mutableListC = mutableListOf<Boolean>()
 println("Empty list $mutableListC")
 ```
 + the `<>` are used to explicitly specify the type of the elements
+
+### Reading list from input
++ To read a list of a certain size from the console, we first need to create a MutableList of some type with a known size.
++ then you can add the `readLine()` function making sure to convert it to the type you want
+```js
+val numbers = MutableList(5) { readLine()!!.toInt() } // on each line single numbers from 1 to 5
+println(numbers) // [1, 2, 3, 4, 5]
+```
