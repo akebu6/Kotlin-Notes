@@ -61,7 +61,7 @@ list[index] = elem
 // getting a vlue
 val elem = list[index]
 ```
-
++ working with lists
 ```js
 val numbers = mutableListOf(0, 0, 0) // numbers: 0, 0, 0
 
