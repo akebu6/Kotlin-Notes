@@ -43,3 +43,11 @@ val str = "1 2\t\t3  4\t5  6"
 val nums = str.split(regex).map { it.toInt() }.toMutableList()
 println(nums.joinToString()) // 1, 2, 3, 4, 5, 6
 ```
+
+### MutableList size
+```js
+val list = MutableList(5) {0}
+
+println(list) // [0, 0, 0, 0, 0]
+```
++ use the `.size` to get the size of a mutable list
