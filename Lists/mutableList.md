@@ -29,3 +29,10 @@ println("Empty list $mutableListC")
 val numbers = MutableList(5) { readLine()!!.toInt() } // on each line single numbers from 1 to 5
 println(numbers) // [1, 2, 3, 4, 5]
 ```
++ reading user input on a single line
+```js
+// here we have an input string "1 2 3 4 5"
+
+val numbers = readLine()!!.split(" ").map { it.toInt() }.toMutableList()
+println(numbers) // [1, 2, 3, 4, 5]
+```
