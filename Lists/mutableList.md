@@ -1,6 +1,7 @@
 # MutableList
 + MutableList is an ordered set of variables of the same type.
 + You can access the list items by their indexes.
++ A mutable list is a data structure of elements that can be accessed by index;
 ```js
 val numbers = mutableListOf(10.8, 14.3, 13.5, 12.1, 9.7) 
 
