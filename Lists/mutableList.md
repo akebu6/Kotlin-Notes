@@ -72,3 +72,7 @@ numbers[2] = numbers[0] + numbers[1] // numbers: 1, 2, 3
 println(numbers[0]) // 1, the first element
 println(numbers[2]) // 3, the last element
 ```
+more functions to work with mutable lists
++`first()` // returns the first element in the list
++ `last()` // returns the last element in the list
++ `lastIndex()` // returns the index of the last element in the list
