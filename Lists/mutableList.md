@@ -55,5 +55,9 @@ println(list) // [0, 0, 0, 0, 0]
 ### Accessing elements
 > you can access or reassign values of a mutable list by using the index
 ```js
+// setting a value
 list[index] = elem
+
+// getting a vlue
+val elem = list[index]
 ```
