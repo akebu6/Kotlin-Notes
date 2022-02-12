@@ -61,3 +61,14 @@ list[index] = elem
 // getting a vlue
 val elem = list[index]
 ```
+
+```js
+val numbers = mutableListOf(0, 0, 0) // numbers: 0, 0, 0
+
+numbers[0] = 1 // numbers: 1, 0, 0
+numbers[1] = 2 // numbers: 1, 2, 0
+numbers[2] = numbers[0] + numbers[1] // numbers: 1, 2, 3
+
+println(numbers[0]) // 1, the first element
+println(numbers[2]) // 3, the last element
+```
