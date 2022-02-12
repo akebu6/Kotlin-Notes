@@ -15,4 +15,5 @@ use the `=` to copy a reference of one object to another
 + An object can be either mutable or immutable.
 + If the object is immutable, you cannot change it, but you can use another object and assign this new object to the same variable. When you reassign the variable, it will point to a new object and other variables will still point to the old object. 
 + Mutable objects on the other hand can be changed and the object will now point to a different variable
++ String, Int, Char, Boolean are all immutable objects
 
