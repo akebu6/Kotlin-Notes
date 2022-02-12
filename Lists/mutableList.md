@@ -51,3 +51,9 @@ val list = MutableList(5) {0}
 println(list) // [0, 0, 0, 0, 0]
 ```
 + use the `.size` to get the size of a mutable list
+
+### Accessing elements
+> you can access or reassign values of a mutable list by using the index
+```js
+list[index] = elem
+```
