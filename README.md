@@ -39,6 +39,11 @@ Click on a particular link in order to access the respective sections of the not
    * [conditional expressions](conditional-expressions)
    * [loops](loops)
    * [ranges](ranges)
+### Operators
+   * [logical operators](logical-operators)
+   * [relational operators](relational-operators)
+### Lists
+   * [mutableLists](mutableLists)
 
 
 
