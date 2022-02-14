@@ -14,6 +14,7 @@ Click on a particular link in order to access the respective sections of the not
 * [Coding Conventions](#coding-conventions)
 * [Lists](#lists)
 * [Standard Input](#standard-input)
+* [Conditions & Loops](#conditions-&-loops)
 
 ### Variables
    * [var](var)
