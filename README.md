@@ -23,6 +23,10 @@ Click on a particular link in order to access the respective sections of the not
    * [val](val)
    * [Declarations](declarations)
 ### Types
+   * [boolean](boolean)
+   * [char](char)
+   * [numbers](numbers)
+   * [string](string)
 ### Arrays
 ### String Template
 ### Number Conversion
