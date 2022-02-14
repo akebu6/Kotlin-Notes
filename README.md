@@ -34,6 +34,11 @@ Click on a particular link in order to access the respective sections of the not
    * [Classes](classes)
    * [Objects](objects)
 ### Coding Conventions
+### Standard Input
+### Conditions & Loops
+   * [conditional expressions](conditional-expressions)
+   * [loops](loops)
+   * [ranges](ranges)
 
 
 
