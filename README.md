@@ -15,6 +15,8 @@ Click on a particular link in order to access the respective sections of the not
 * [Lists](#lists)
 * [Standard Input](#standard-input)
 * [Conditions & Loops](#conditions-&-loops)
+* [Operators](#operators)
+* []()
 
 ### Variables
    * [var](var)
