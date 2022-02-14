@@ -12,7 +12,8 @@ Click on a particular link in order to access the respective sections of the not
 * [Functions](#functions)
 * [Classes Objects](#classes-objects)
 * [Coding Conventions](#coding-conventions)
-* 
+* [Lists](#lists)
+* [Standard Input](#standard-input)
 
 ### Variables
    * [var](var)
