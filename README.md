@@ -1,5 +1,5 @@
 # Kotlin-Notes
-> These are all my notes I made while learning Kotlin.
+> These are all my notes I will be while learning Kotlin and will be updated regularly
 
 ## Sections
 Click on a particular link in order to access the respective sections of the notes.
