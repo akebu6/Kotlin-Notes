@@ -16,7 +16,7 @@ Click on a particular link in order to access the respective sections of the not
 * [Standard Input](#standard-input)
 * [Conditions & Loops](#conditions-&-loops)
 * [Operators](#operators)
-* [Frameworks](frameworks)
+* [Frameworks & Libraries](frameworks-&-libraries)
 * [Kotlin Multiplatform Mobile](kotlin-multiplatform-mobile)
 
 ### Variables
@@ -52,6 +52,8 @@ Click on a particular link in order to access the respective sections of the not
 ### Frameworks
    * [ktor](ktor)
    * [koin](koin)
+   * [kotless](kotless)
+   * [kotest](kotest)
   
 
 
