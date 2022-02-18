@@ -79,7 +79,7 @@ more functions to work with mutable lists
 + `lastIndex()` // returns the index of the last element in the list
 
 ### Outputting a list
-+ `joinToString()`: helps us output our list in different ways using the separator attribute.
++ `joinToString()`: helps us output our list in different ways using the separator attribute. It takes elements from a mutable list in the order in which they are stored and presents them as a comma-delimited string line.
 ```js
 val southernCross = mutableListOf("Acrux", "Gacrux", "Imai", "Mimosa")
 println(southernCross.joinToString())   //  Acrux, Gacrux, Imai, Mimosa
