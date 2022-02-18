@@ -77,3 +77,10 @@ more functions to work with mutable lists
 +`first()` // returns the first element in the list
 + `last()` // returns the last element in the list
 + `lastIndex()` // returns the index of the last element in the list
+
+### Outputting a list
++ `joinToString()`: helps us output our list in different ways using the separator attribute.
+```js
+val southernCross = mutableListOf("Acrux", "Gacrux", "Imai", "Mimosa")
+println(southernCross.joinToString())   //  Acrux, Gacrux, Imai, Mimosa
+```
