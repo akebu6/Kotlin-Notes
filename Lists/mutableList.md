@@ -174,3 +174,25 @@ print(copyList) // [1, 2, 3, 4, 5]
 ```
 
 ### Other useful functions
++ `list.isEmpty()` and `list.isNotEmpty()` – check whether the list is empty.
++ `list.sublist(from, to)` – creates a smaller list (sublist), which includes items of the original list with the following indexes: from, from + 1, ..., to - 2, to - 1. The element with the index to is not included.
+```js
+val numbers = mutableListOf(1, 2, 3, 4, 5)
+val sublist = mutableListOf<Int>()
+if (numbers.isNotEmpty() && numbers.size >= 4) {
+     sublist = numbers.subList(1, 4)
+}
+
+print(sublist) // [2, 3, 4]
+```
++ `element in list` – checks if an element belongs to the list.
++ `list.indexOf(element)` – searches for the index of an element in the list. The result of this function is -1 if there is no such element in the list. Otherwise, when we access the list by the calculated index, we get the element.
+```js
+val numbers = mutableListOf(1, 2, 3, 4, 5)
+
+if (5 in numbers) {
+    println(numbers.indexOf(5)) // 4
+}
+
+print(numbers.indexOf(7)) // -1
+```
