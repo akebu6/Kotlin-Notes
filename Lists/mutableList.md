@@ -166,3 +166,9 @@ println(intList1) // [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
 
 ### Copy list content
 Kotlin doesn't have any functions to copy existing lists. However, you can do it using the `toMutableList()` function
+```js
+val list = mutableListOf(1, 2, 3, 4, 5)
+val copyList = list.toMutableList()
+
+print(copyList) // [1, 2, 3, 4, 5]
+```
