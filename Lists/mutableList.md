@@ -92,11 +92,21 @@ println(southernCross.joinToString(" -> "))   //  Acrux -> Gacrux -> Imai -> Mim
 ```
 
 ### Working with multiple lists
-mutable lists can be joined using the `+` operator
++ mutable lists can be joined using the `+` operator
 ```js
 val southernCross = mutableListOf("Acrux", "Gacrux", "Imai", "Mimosa")
 val stars = mutableListOf("Ginan", "Mu Crucis")
 
 val newList = southernCross + stars
 println(newList.joinToString())    //  Acrux, Gacrux, Imai, Mimosa, Ginan, Mu Crucis
+```
++ mutable lists can be compared using the `==` and the `!=` operators
+```js
+val firstList = mutableListOf("result", "is", "true")
+val secondList = mutableListOf("result", "is", "true")
+val thirdList = mutableListOf("result")
+
+println(firstList == secondList)  //  true
+println(firstList == thirdList)   //  false
+println(secondList != thirdList)  //  true
 ```
