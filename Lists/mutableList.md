@@ -92,3 +92,11 @@ println(southernCross.joinToString(" -> "))   //  Acrux -> Gacrux -> Imai -> Mim
 ```
 
 ### Working with multiple lists
+mutable lists can be joined using the `+` operator
+```js
+val southernCross = mutableListOf("Acrux", "Gacrux", "Imai", "Mimosa")
+val stars = mutableListOf("Ginan", "Mu Crucis")
+
+val newList = southernCross + stars
+println(newList.joinToString())    //  Acrux, Gacrux, Imai, Mimosa, Ginan, Mu Crucis
+```
