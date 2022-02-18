@@ -102,6 +102,7 @@ println(newList.joinToString())    //  Acrux, Gacrux, Imai, Mimosa, Ginan, Mu Cr
 ```
 + mutable lists can be compared using the `==` and the `!=` operators
 ```js
+// returns true if both lists contain the same information and it's arranged in the same way
 val firstList = mutableListOf("result", "is", "true")
 val secondList = mutableListOf("result", "is", "true")
 val thirdList = mutableListOf("result")
