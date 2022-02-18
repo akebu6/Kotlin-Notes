@@ -146,3 +146,7 @@ println(stars[1]) // star
   println(stars.joinToString()) // First star, Ginan, Mu Crucis, New star
   println(food.joinToString()) // Bread, Cheese, Meat, Apple, Banana, Grape, Mango
 ```
++ `add(element)` and `add(index, element)` insert new items at any position in the list. If you don't specify the index, the item will be added to the end of the list.
++ `list1.addAll(list2)` adds all elements from list2 to the end of the list1.
++ `remove(element)` and `removeAt(index)` delete an item from the list. The former function deletes a single instance of the specified element from the list (it returns true if item was successfully removed, otherwise it returns false). The latter function deletes the element at the specified position and returns the element that has been removed.
++ `clear()` deletes all elements from the list.
