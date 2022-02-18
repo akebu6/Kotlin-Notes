@@ -15,3 +15,9 @@ println(blueBox == cyanBox)   // true
 println(blueBox === cyanBox)  // false, cyanBox points to another object
 ```
 + you can also check for referential inequality by using the `!==` operator
++ you also check for equality of immutable objects
+```js
+var two = 2
+var anotherTwo = 2
+println(two === anotherTwo) // true
+```
