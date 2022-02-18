@@ -114,3 +114,35 @@ println(secondList != thirdList)  //  true
 
 ### Changing the list contents
 > The keywords val and var tell you how the value/reference of a variable should be handled but the contents can still be updated using the index
+```js
+val southernCross = mutableListOf("Acrux", "Gacrux", "Imai", "Mimosa")
+var stars = mutableListOf("Ginan", "Mu Crucis")
+southernCross[1] = "star"
+stars[1] = "star"
+
+println(southernCross[1]) // star
+println(stars[1]) // star
+```
++ you can use `add()`, `remove()`, `clear()` to add, remove or clear elements from a list
+```js
+  val southernCross = mutableListOf("Acrux", "Gacrux", "Imai", "Mimosa")
+  val stars = mutableListOf("Ginan", "Mu Crucis")
+  val names = mutableListOf("Jack", "John", "Katie")
+  val food = mutableListOf("Bread", "Cheese", "Meat")
+  val fruits = mutableListOf("Apple", "Banana", "Grape", "Mango")
+
+  southernCross.removeAt(0)
+  southernCross.remove("Mimosa")
+
+  stars.add("New star")
+  stars.add(0, "First star")
+
+  names.clear()
+
+  food.addAll(fruits)
+
+  println(names) // []
+  println(southernCross.joinToString()) // Gacrux, Imai
+  println(stars.joinToString()) // First star, Ginan, Mu Crucis, New star
+  println(food.joinToString()) // Bread, Cheese, Meat, Apple, Banana, Grape, Mango
+```
