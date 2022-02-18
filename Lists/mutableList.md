@@ -111,3 +111,6 @@ println(firstList == secondList)  //  true
 println(firstList == thirdList)   //  false
 println(secondList != thirdList)  //  true
 ```
+
+### Changing the list contents
+> The keywords val and var tell you how the value/reference of a variable should be handled but the contents can still be updated using the index
