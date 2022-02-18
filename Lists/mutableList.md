@@ -90,3 +90,5 @@ println(southernCross.joinToString())   //  Acrux, Gacrux, Imai, Mimosa
 ```js
 println(southernCross.joinToString(" -> "))   //  Acrux -> Gacrux -> Imai -> Mimosa
 ```
+
+### Working with multiple lists
