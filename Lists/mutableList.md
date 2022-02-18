@@ -196,3 +196,18 @@ if (5 in numbers) {
 
 print(numbers.indexOf(7)) // -1
 ```
++ `list.minOrNull()` and `list.maxOrNull()` – search for the minimum and maximum elements in the list.
++ `list.sum()` – returns the sum of the elements in the list.
++ `list.sorted()` and `list.sortedDescending()` – build a sorted list (ascending or descending) from the available list.
+```js
+val numbers = mutableListOf(1, 2, 3, 4, 5)
+    
+val vowels = mutableListOf('e', 'a', 'y', 'i', 'u', 'o')
+    
+println(numbers.minOrNull()) // 1
+println(numbers.maxOrNull()) // 5
+println(numbers.sum())      // 15
+    
+println(vowels.sorted()) // [a, e, i, o, u, y]
+println(vowels.sortedDescending()) // [y, u, o, i, e, a]
+```
