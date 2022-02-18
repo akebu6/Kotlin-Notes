@@ -150,3 +150,19 @@ println(stars[1]) // star
 + `list1.addAll(list2)` adds all elements from list2 to the end of the list1.
 + `remove(element)` and `removeAt(index)` delete an item from the list. The former function deletes a single instance of the specified element from the list (it returns true if item was successfully removed, otherwise it returns false). The latter function deletes the element at the specified position and returns the element that has been removed.
 + `clear()` deletes all elements from the list.
+
+Also, you can use += to add new elements to the list:
+```js
+val vowels = mutableListOf('a', 'o', 'i', 'e', 'u')
+val intList1 = mutableListOf(1, 2, 3, 4, 5)
+val intList2 = mutableListOf(5, 4, 3, 2, 1)
+    
+vowels += 'y'
+intList1 += intList2
+
+println(vowels)   // [a, o, i, e, u, y]
+println(intList1) // [1, 2, 3, 4, 5, 5, 4, 3, 2, 1]
+```
+
+### Copy list content
+Kotlin doesn't have any functions to copy existing lists. However, you can do it using the `toMutableList()` function
