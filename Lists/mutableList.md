@@ -172,3 +172,5 @@ val copyList = list.toMutableList()
 
 print(copyList) // [1, 2, 3, 4, 5]
 ```
+
+### Other useful functions
