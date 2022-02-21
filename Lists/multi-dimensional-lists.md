@@ -64,7 +64,16 @@ print(mutListString[0].joinToString())    // A, R, R, A, Y
 ```
 - not convinient for 2D list, instead just print the main list
 
+### More than 2D Lists
+- 3D lists are 2D lists with another list nested inside and needs 3 indices in order to get a particular element
+```
+val mutList3D = mutableListOf(
+    mutableListOf(mutableListOf<Int>(0,1), mutableListOf<Int>(2,3)),
+    mutableListOf(mutableListOf<Int>(4,5), mutableListOf<Int>(6,7))
+)
 
+println(mutList3D)  // [[[0, 1], [2, 3]], [[4, 5], [6, 7]]]
+```
 
 
 
