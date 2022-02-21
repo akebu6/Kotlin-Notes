@@ -53,3 +53,19 @@ val mutListOfStringAndInt2D = mutableListOf(
     mutableListOf<Int>(1, 2)
 )
 ```
+
+### Features of working with 2D lists
+```js
+// working with joinToString
+val mutListString = mutableListOf(
+    mutableListOf<String>("A", "R", "R", "A", "Y")
+)
+print(mutListString[0].joinToString())    // A, R, R, A, Y
+```
+- not convinient for 2D list, instead just print the main list
+
+
+
+
+
+
