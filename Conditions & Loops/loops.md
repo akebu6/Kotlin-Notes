@@ -71,6 +71,13 @@ fun main() {
     }
 }
 ```
+- iterating through a MutableList
+```js
+for (element in mutList) {
+    // body of loop
+}
+```
+
 
 ## Repeat Function
 > used when you want to repeat a statement multiple times
