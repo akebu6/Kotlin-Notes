@@ -117,7 +117,19 @@ fun main() {
 ```
 
 ### Reading MutableList elements
+```js
+fun main() {
+    val size = readLine()!!.toInt()
+    val mutList: MutableList<Int> = mutableListOf()
+    for (i in 0 until size) {
+        mutList.add(readLine()!!.toInt())
+    }
 
+    for (i in mutList.lastIndex downTo 0) {
+        print("${mutList[i]} ")
+    }
+}
+```
 
 ## Repeat Function
 > used when you want to repeat a statement multiple times
