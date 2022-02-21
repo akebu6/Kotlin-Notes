@@ -73,6 +73,9 @@ val mutList3D = mutableListOf(
 )
 
 println(mutList3D)  // [[[0, 1], [2, 3]], [[4, 5], [6, 7]]]
+println(mutList3D[0][0][1])   // 1
+println(mutList3D[1][0][1])   // 5
+println(mutList3D[1][1][1])   // 7
 ```
 
 
