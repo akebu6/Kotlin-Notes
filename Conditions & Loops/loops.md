@@ -77,6 +77,46 @@ for (element in mutList) {
     // body of loop
 }
 ```
+- iterating by indexes
+> it is possible to access elements by their index directly from the loop. To do that, you must use the mutList.indices property, which represents a range of valid mutList indexes.
+```js
+fun main() {
+    val daysOfWeek = mutableListOf("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat")
+
+    for (index in daysOfWeek.indices){
+        println("$index: ${daysOfWeek[index]}")
+    }
+}
+```
+- iterating by range indexes
+```js
+fun main() {
+    val daysOfWeek = mutableListOf("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat")
+
+    for (index in 1..5) {
+        println("$index: ${daysOfWeek[index]}")
+    }
+}
+```
+**Note:**
+> To use the last index of a mutable list in ranges, you need to access mutList.lastIndex. So, we can modify the code this way:
+```js
+for (index in 1 until daysOfWeek.lastIndex) {
+    println("$index: ${daysOfWeek[index]}")
+}
+```
+- using `step` and `downTo`
+```js
+fun main() {
+    val daysOfWeek = mutableListOf("Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat")
+
+    for (index in daysOfWeek.lastIndex downTo 0 step 2) {
+        println("$index: ${daysOfWeek[index]}")
+    }
+}
+```
+
+### Reading MutableList elements
 
 
 ## Repeat Function
