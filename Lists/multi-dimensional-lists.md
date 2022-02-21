@@ -19,3 +19,14 @@ val mutList2D = mutableListOf(
     mutableListOf<Int>(3, 4, 5)
 )
 ```
+
+### Accessing elements
+> accessed the same way as 1D lists but these use two indices
+```js
+val mutList2D = mutableListOf(
+    mutableListOf<Int>(0, 1, 2),   //[0]
+    mutableListOf<Int>(3, 4, 5)    //[1]  
+)
+
+println(mutList2D[0][0])    // 0
+```
