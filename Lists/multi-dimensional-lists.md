@@ -30,3 +30,26 @@ val mutList2D = mutableListOf(
 
 println(mutList2D[0][0])    // 0
 ```
+
+### Creating 2D lists of different types
+> can be a list of strings, characters, long, double and so forth
+```js
+// list of strings
+val mutListOfString2D = mutableListOf(
+    mutableListOf<String>("to", "be", "or"),
+    mutableListOf<String>("not", "to", "be")
+)
+
+// list of characters
+val mutListOfChar2D = mutableListOf(
+    mutableListOf<Char>('A', 'R', 'R'),
+    mutableListOf<Char>('A', 'Y', 'S')
+)
+```
+- nested lists can also be of different types
+```js
+val mutListOfStringAndInt2D = mutableListOf(
+    mutableListOf<String>("Practice", "makes", "perfect"),
+    mutableListOf<Int>(1, 2)
+)
+```
