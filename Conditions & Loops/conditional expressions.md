@@ -79,3 +79,21 @@ fun main(){
     }
 }
 ```
++ it can also be used with complex blocks
+```js
+when (op) {
+    "+", "plus" -> {
+        val sum = a + b
+        println(sum)
+    }
+    "-", "minus" -> {
+        val diff = a - b
+        println(diff)
+    }
+    "*", "times" -> {
+        val product = a * b
+        println(product)
+    }
+    else -> println("Unknown operator")
+}
+```
