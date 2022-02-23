@@ -61,3 +61,21 @@ val max = if (a > b) {
 // if all the bodies contain a single statement then you can ommit the curly brackets
 val max = if (a > b) a else b
 ```
+
+## When Expression
+> can be used in place of if statements
+```js
+fun main(){
+    val (var1, op, var2) = readLine()!!.split(" ")
+
+    val a = var1.toInt()
+    val b = var2.toInt()
+
+    when (op) {
+        "+" -> println(a + b)
+        "-" -> println(a - b)
+        "*" -> println(a * b)
+        else -> println("Unknown operator")
+    }
+}
+```
