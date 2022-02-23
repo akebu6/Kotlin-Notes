@@ -116,3 +116,31 @@ println(result)
     else -> "Unknown operator"
 })
 ```
+
+### Branch conditions and ranges
+```js
+fun main(){
+    val (var1, var2, var3) = readLine()!!.split(" ")
+
+    val a = var1.toInt()
+    val b = var2.toInt()
+    val c = var3.toInt()
+
+    println(when (c) {
+        a + b -> "$c equals $a plus $b"
+        a - b -> "$c equals $a minus $b"
+        a * b -> "$c equals $a times $b"
+        else -> "We do not know how to calculate $c"
+    })
+}
+```
+
++ in ranges
+```js
+when (n) {
+    0 -> println("n is zero")
+    in 1..10 -> println("n is between 1 and 10 (inclusive)")
+    in 25..30 -> println("n is between 25 and 30 (inclusive)")
+    else -> println("n is outside a range")
+}
+```
