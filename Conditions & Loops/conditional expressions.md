@@ -144,3 +144,7 @@ when (n) {
     else -> println("n is outside a range")
 }
 ```
++ rangs can also be combines
+```js
+in a..b, in c..d -> println("n belongs to a range")
+```
