@@ -109,3 +109,10 @@ val result = when (op) {
 }
 println(result)
 ```
++ without a declared variable
+```js'println(when(op) {
+    "+" -> a + b
+    // ...
+    else -> "Unknown operator"
+})
+```
