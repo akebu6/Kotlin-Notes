@@ -97,3 +97,15 @@ when (op) {
     else -> println("Unknown operator")
 }
 ```
+
+### When as an expression
+> when can also be used to return a result and in such a case, the else clause is required
+```js
+val result = when (op) {
+    "+" -> a + b
+    "-" -> a - b
+    "*" -> a * b
+    else -> "Unknown operator"
+}
+println(result)
+```
