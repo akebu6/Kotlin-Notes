@@ -148,3 +148,18 @@ when (n) {
 ```js
 in a..b, in c..d -> println("n belongs to a range")
 ```
+
+### When without arguments
+```js
+fun main(){
+    val n = readLine()!!.toInt()
+    
+    when {
+        n == 0 -> println("n is zero")
+        n in 100..200 -> println("n is between 100 and 200")
+        n > 300 -> println("n is greater than 300")
+        n < 0 -> println("n is negative")
+        // else-branch is optional here
+    }
+}
+```
