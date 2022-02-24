@@ -108,6 +108,69 @@ catch (e: Exception) {
 The catch block with the base type has to be written below all the blocks with subtypes. In other words, more specialized handlers (like IOException) must be written before the more general ones (like Exception). Otherwise, the block with the subtype will be ignored.
 
 
+# The finally block
+- All the statements present in this block will always execute regardless of whether an exception occurs in the try block or not.
+```js 
+try {
+    // code that may throw an exception
+}
+catch (e: Exception) {
+    // exception handler
+}
+finally {
+    // code is always executed
+}
+```
+- you can also write a try and finally block without the catch block as follows:
+```js
+try {
+    // code that may throw an exception
+} 
+finally {   
+    // code will always be executed
+}
+```
+
+### Try is an expression
+```js
+val number: Int = try { "abc".toInt() } catch (e: NumberFormatException) { 0 }
+println(number) // 0
+```
+- The contents of the finally block do not affect the result of the expression:
+```js
+val number: Int = try { "2a".toInt() } catch (e: NumberFormatException) { 0 }
+finally { println("Inside the finally block") }
+println(number)
+```
+- Another useful technique is to rethrow exceptions to the caller. You need to add a way to handle exceptions in the code snippet where you call the function that can throw an exception. Here is an example of how to do this with an expression-style try:
+```js
+fun test() {
+    val result = try {
+        countSomething()
+    } catch (e: ArithmeticException) {
+        throw IllegalStateException(e) // do not forget to deal with it
+    }
+
+    // Working with result
+}
+
+
+try {
+    test()
+} catch (e: IllegalStateException) {
+    ...
+}
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
