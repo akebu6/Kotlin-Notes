@@ -41,7 +41,22 @@ val sequence = "string"
 println(sequence[10])   // throws StringIndexOutOfBoundsException
 ```
 
-
++ the `throw` keyword is used to create an exception
+```js
+fun calculateSpentMoney(total: Int, itemPrice: Int): Int {
+    if (total < 0) {
+        throw Exception("Total can't be negative")
+    }
+    if (itemPrice < 0) {
+        throw Exception("Item price can't be negative")
+    }
+    if (itemPrice == 0) {
+        return 0
+    }
+    val amountToBuy = total / itemPrice
+    return amountToBuy * itemPrice
+}
+```
 
 
 
