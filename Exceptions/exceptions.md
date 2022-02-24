@@ -59,6 +59,57 @@ fun calculateSpentMoney(total: Int, itemPrice: Int): Int {
 ```
 
 
+# The try-catch statement
+```js
+try {
+    // code that may throw an exception
+} catch (e: SomeException) {
+    // code for handling the exception
+}
+```
++ The `try` block is used to wrap the code that may throw an exception
++ The catch block is a handler for the specified type of exception and all its subtypes. This block is executed when an exception of the corresponding type occurs in the try block.
+```js
+println("Before the try-catch block") // it will be printed
+try {
+    println("Inside the try block before an exception") // it will be printed
+    println(2 / 0) // it throws ArithmeticException
+    println("Inside the try block after the exception") // it won't be printed
+} 
+catch (e: ArithmeticException) {
+    println("Division by zero!") // it will be printed
+}
+
+println("After the try-catch block") // it will be printed
+```
+### Getting info about exceptions
++ the `message` is used to get information about the exception caught by the catch block
+```js
+try {
+    val d = (2 / 0).toDouble()
+} 
+catch (e: Exception) {
+    println(e.message)
+}
+```
+### Catching multiple exception
+```js
+try {
+    // code that throws exceptions
+}
+catch (e: IOException) {
+    // handling the IOException and its subtypes   
+}
+catch (e: Exception) {
+    // handling the Exception and its subtypes
+}
+```
+**Note:** 
+The catch block with the base type has to be written below all the blocks with subtypes. In other words, more specialized handlers (like IOException) must be written before the more general ones (like Exception). Otherwise, the block with the subtype will be ignored.
+
+
+
+
 
 
 
