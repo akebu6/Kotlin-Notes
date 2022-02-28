@@ -87,3 +87,76 @@ println(first == str)    // true
 println(first == second) // false
 println(first != second) // true
 ```
+
+### Getting a part of a string
+> `substring` function id used to get a part of a string
++ it accepts startIndex (inclusive) and lastIndex (exclusive) as arguments and returns a string that starts at the startIndex and ends right before the lastIndex.
+```js
+val greeting = "Hello"
+println(greeting.substring(0, 3)) // "Hel"
+println(greeting.substring(1, 3)) // "el"
+println(greeting.substring(2))    // "llo"
+println(greeting.substring(4, 5)) // "o"
+```
++ The parameter lastIndex can be omitted; then you will get a substring from the startIndex element to the end of the original string.
++ The substring method is not the only way to get part of a string. You can also use the substringAfter and substringBefore functions:
+```js
+println(greeting.substringAfter('l'))  // "lo"
+println(greeting.substringBefore('o')) // "Hell"
+println(greeting.substringBefore('z')) // "Hello"
+```
++ These functions accept delimiter as an argument and return a string before/after the first occurrence of a specified delimiter. If the string does not contain any occurrences of the delimiter argument, the function returns the whole string.
++ The functions substringBeforeLast and substringAfterLast have a logic similar to substringBefore and substringAfter but return a string before or after the last occurrence of the delimiter.
+```js
+println(greeting.substringAfterLast('l'))  // "o"
+println(greeting.substringBeforeLast('l')) // "Hel"
+```
+
+### Replacing parts of a string
+> The replace function replaces all occurrences of the first argument in the string with the second argument.
+```js
+val example = "Good morning..."
+println(example.replace("morning", "bye")) // "Good bye..."
+println(example.replace('.', '!'))         // "Good morning!!!"
+```
++ the replace function returns a new string without changing the original string
++ if you only want to replace the first occurrence of a string use the `replaceFirst()`
+```js
+val example = "one one two three"
+println(example.replaceFirst("one", "two")) // "two one two three"
+```
+
+### Changing the case
++ changing to lowercase
+```js
+val example = "UPPERCASE String"
+println(example.lowercase()) // uppercase string
+```
++ changing to uppercase
+```js
+val example = "Lowercase String"
+println(example.uppercase()) // LOWERCASE STRING
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
