@@ -156,10 +156,40 @@ OR
 val number = "+1-213-345-6789"
 val parts = number.split("-") // ["+1", "213", "345", "6789"]
 ```
++ Choose your delimiter wisely, otherwise, you can receive some sentences that start with a space
++ You can choose any delimiter you prefer, even the combination of spaces and words:
+```js
+val text = "I'm gonna be a programmer"
+val parts = text.split(" gonna be ") // ["I'm", "a programmer"]
+```
 
+### 2. Iterating over a string
+```jsval scientistName = "Isaac Newton"
 
+for (i in 0 until scientistName.length) {
+    print("${scientistName[i]} ") // print the current character
+}
+```
++ you can iterate through a string:
+```js
+val str = "strings are not primitive types!"
 
+var count = 0
+for (ch in str) {
+    if (Character.isWhitespace(ch))
+        count++
+}
 
+println(count) // 4
+```
++ Example of iterating through an array by indices:
+```js
+val rainbow = "ROYGCBV"
+
+for (index in rainbow.indices){
+    println("${index+1}: ${rainbow[index]}")
+}
+```
 
 
 
