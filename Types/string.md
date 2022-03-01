@@ -138,8 +138,24 @@ val example = "Lowercase String"
 println(example.uppercase()) // LOWERCASE STRING
 ```
 
+## Processing Strings
+### 1. Splitting the string
++ A string can be separated by delimiters to a list of strings.
++ To perform this, call the method split() , it divides a string into substrings by a separator
++ The method returns a List of all the substrings. 
++ The List is similar to MutableList, but you cannot reassign elements in the List and you cannot resize the List.
++ You can easily convert List to MutableList and vice versa with `toMutableList()` and `toList()` functions.
+```js
+val sentence = "a long text"
+val wordsList: List<String> = sentence.split(" ") // ["a", "long", "text"]
 
-
+val mutableWordList = sentence.split(" ").toMutableList() // MutableList ["a", "long", "text"]
+```
+OR
+```js
+val number = "+1-213-345-6789"
+val parts = number.split("-") // ["+1", "213", "345", "6789"]
+```
 
 
 
