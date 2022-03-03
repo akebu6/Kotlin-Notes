@@ -5,6 +5,7 @@
 Click on a particular link in order to access the respective sections of the notes.
 
 * [Variables](#variables)
+* [Exceptions](#exceptions)
 * [Types](#types)
 * [Arrays](#arrays)
 * [String Template](#string-template)
@@ -49,6 +50,9 @@ Click on a particular link in order to access the respective sections of the not
    * [relational operators](relational-operators)
 ### Lists
    * [mutableLists](mutableLists)
+### Exceptions
+   * [error](error)
+   * [exceptions](exceptions)
 ### Frameworks
    * [ktor](ktor)
    * [koin](koin)
