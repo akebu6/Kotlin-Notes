@@ -31,6 +31,7 @@ Click on a particular link in order to access the respective sections of the not
    * [string](string)
 ### Arrays
 ### String Template
+   * [working with string template](working-with-string-template)
 ### Number Conversion
    * [type conversion](type-converion)
    * [type coercion](type-coercion)
@@ -41,6 +42,7 @@ Click on a particular link in order to access the respective sections of the not
    * [Objects](objects)
 ### Coding Conventions
 ### Standard Input
+   * [user input](user-input)
 ### Conditions & Loops
    * [conditional expressions](conditional-expressions)
    * [loops](loops)
