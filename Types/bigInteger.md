@@ -28,3 +28,39 @@ val ten = BigInteger.TEN   // 10
 val numToBigInt = 1234.toBigInteger()
 val strToBigInt = "1234".toBigInteger()
 ```
+
+### Arithmetic operations
+```js
+val eleven = ten + one             // 10 + 1 = 11
+val nine = ten - one               // 10 - 1 = 9
+val oneHundredTen = ten * eleven   // 10 * 11 = 110
+val twelve = oneHundredTen / nine  // integer division = 12
+val two = oneHundredTen % nine     // remainder = 2
+```
++ The unary minus operator returns a new BigInteger that has an opposite sign.
+```js
+val minusOne = -one // -1
+```
++ it is possible to use increment (++) and decrement (--) operators in prefix and postfix forms.
+
+### Functions of BigInteger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
