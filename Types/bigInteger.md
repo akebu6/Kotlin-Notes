@@ -44,9 +44,24 @@ val minusOne = -one // -1
 + it is possible to use increment (++) and decrement (--) operators in prefix and postfix forms.
 
 ### Functions of BigInteger
-
-
-
+1. `divideAndRemainder` function
++ returns an array consisting of two numbers: the result of integer division and the remainder:
+```js
+val (result, remainder) = oneHundredTen.divideAndRemainder(nine) // 12 and 2
+```
+2. `abs` function
++ returns a new BigInteger whose value is the absolute value of this BigInteger:
+```j
+val number = BigInteger("-8")
+println(number.abs()) // 8
+```
+3. `gcd` function
++ returns the greatest common divisor of two numbers.
+```js
+val eight = BigInteger.valueOf(8)
+val six = BigInteger.valueOf(6)
+println(eight.gcd(six)) // 2
+```
 
 
 
