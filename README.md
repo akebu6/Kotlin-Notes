@@ -29,12 +29,15 @@ Click on a particular link in order to access the respective sections of the not
    * [char](char)
    * [numbers](numbers)
    * [string](string)
+   * [floating types](floating-types)
 ### Arrays
 ### String Template
    * [working with string template](working-with-string-template)
 ### Number Conversion
    * [type conversion](type-converion)
    * [type coercion](type-coercion)
+   * [decimal to binary](decimal-to-binary)
+   * [octal](octal)
 ### Functions
    * [Declaring functions](declaring-functions)
 ### Classes & Objects
@@ -47,11 +50,14 @@ Click on a particular link in order to access the respective sections of the not
    * [conditional expressions](conditional-expressions)
    * [loops](loops)
    * [ranges](ranges)
+   * [jump expressions](jumps-expressions)
 ### Operators
    * [logical operators](logical-operators)
    * [relational operators](relational-operators)
+   * [equality](equality)
 ### Lists
    * [mutableLists](mutableLists)
+   * [multidimensional lists](multidimensional-lists)
 ### Exceptions
    * [error](error)
    * [exceptions](exceptions)
