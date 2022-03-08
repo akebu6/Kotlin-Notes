@@ -60,6 +60,21 @@ val power = first.pow(3)
 - It is also possible to use increment (++) and decrement (--) operators in their postfix forms
 
 
+### 3. Rounding control
+> `setScale()` is used to work with large fractional numbers
+
+```js
+bigDecimal.setScale(newScale, RoundingMode)
+```
+- The first parameter is newScale. It sets the number of digits after the decimal point. You may receive the scale of your number this way:
+```js
+val fractionalNumber= 1234.5678.toBigDecimal()
+println(fractionalNumber.scale()) // 4
+```
+- The second parameter — roundingMode— allows us to manage the rounding mode. To use it, you need to perform the import:
+```js
+import java.math.RoundingMode
+```
 
 
 
