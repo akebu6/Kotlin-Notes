@@ -30,6 +30,8 @@ Click on a particular link in order to access the respective sections of the not
    * [numbers](numbers)
    * [string](string)
    * [floating types](floating-types)
+   * [bigIntger](bigIntger)
+   * [bigDecimal](bigDecimal)
 ### Arrays
 ### String Template
    * [working with string template](working-with-string-template)
