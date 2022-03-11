@@ -81,9 +81,27 @@ import java.math.RoundingMode
 
 
 
+### 4. Rounding mode examples
+```js
+1. 
+var bigDecimal = BigDecimal("100.5649")
+println(bigDecimal.setScale(3, RoundingMode.CEILING))   // 100.565
 
+bigDecimal = BigDecimal("0.55")
+println(bigDecimal.setScale(1, RoundingMode.HALF_DOWN)) // 0.5
+println(bigDecimal.setScale(3, RoundingMode.UNNECESSARY)) // 0.550
+```
 
+**Note:** 
+BigDecimal numbers are immutable, so it is not enough to simply apply setScale() in order for the number to retain the new value after rounding.
+```js
+var bigDecimal = BigDecimal("999999999999999999.99999999999999")
+bigDecimal.setScale(3, RoundingMode.HALF_UP)
+println(bigDecimal) // 999999999999999999.99999999999999
 
+bigDecimal = bigDecimal.setScale(3, RoundingMode.HALF_UP)
+println(bigDecimal) // 1000000000000000000.000
+```
 
 
 
