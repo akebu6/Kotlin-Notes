@@ -76,7 +76,8 @@ println(fractionalNumber.scale()) // 4
 import java.math.RoundingMode
 ```
 
-
+- other rounding modes
+![RoundingModes](https://user-images.githubusercontent.com/74776297/157921721-92c3fc36-bb36-44a0-8d9a-fea7e3251729.svg)
 
 
 
