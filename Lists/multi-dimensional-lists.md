@@ -11,7 +11,7 @@ val mutList2D = mutableListOf(
 )
 ```
 - the first list is called the main list
-- netsed lists can have different sizes
+- nested lists can have different sizes
 ```js
 val mutList2D = mutableListOf(
     mutableListOf<Int>(0),
