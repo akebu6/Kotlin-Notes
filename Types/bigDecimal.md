@@ -103,7 +103,45 @@ bigDecimal = bigDecimal.setScale(3, RoundingMode.HALF_UP)
 println(bigDecimal) // 1000000000000000000.000
 ```
 
+- rounding modes with a precision set to 0
+![roundingModes](https://user-images.githubusercontent.com/74776297/157923553-ed9f15c7-263b-42ee-adbe-2dd893aae7f1.svg)
+
+- UNNECESSARY will add insignificant zeros to the number if you specified too many digits in setScale(). But if you specify too few digits, an error will occur.
 
 
+### 5. Rounding in arithmetic operations
+> The scale of the result is the same as the scale of the dividend, and by default, RoundingMode.HALF_EVEN is used
 
+- This can also be done manually as follows:
+```js
+val dividend = BigDecimal("0.9865745")
+val divisor = BigDecimal("3.543")
 
+var quotient = dividend / divisor    // 0.2784574
+quotient = dividend.setScale(4, RoundingMode.CEILING)/ divisor   // 0.2785
+```
+
+- returning a fractional part from whole numbers
+```js
+val intDividend = BigDecimal("10")
+val divisor = BigDecimal("3")
+
+var quotient = intDividend / divisor    // 3
+quotient = intDividend.setScale(4, RoundingMode.CEILING)/ divisor   // 3.3333
+```
+
+- working with addition, subtraction & multiplication
+```js
+val first = BigDecimal("7.7777")
+val second = BigDecimal("3.3")
+
+val addition = first + second   // 11.0777; The result scale is 4 (max of the scales)
+val subtraction = first - second   // 4.4777; The result scale is 4 (max of the scales)
+val multiplication = first * second // 25.66641; The result scale is 5 (sum of the scales)
+```
+
+**Note:** 
+- Addition: the maximum scale of the addends;
+- Subtraction: the maximum scale of the minuend and subtrahend;
+- Multiplication: the sum of the multiplier and multiplicand scales;
+- Division: the scale of the dividend.
