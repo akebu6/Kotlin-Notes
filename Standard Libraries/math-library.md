@@ -47,7 +47,14 @@ val sin = sin(pi / 2) // 1.0
 val cos = cos(pi) // -1.0
 val tan = tan(pi / 4) // 0.99999999... (an inaccurate result)
 ```
-
++ calculating the hypotunese
+```js
+val a = 3.toDouble()
+val b = 4.toDouble()
+val c = hypot(a, b) // c is 5.0, function works with Double or Float
+```
++ for more math functions, refer to the following link
+https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.math/
 
 
 
