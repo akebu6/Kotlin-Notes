@@ -33,3 +33,5 @@ val ln = ln(e)   // 1
 val log = log(16.0, 4.0)  // 2
 val logSum = ln(exp(2.0) * exp(3.0))  // 5
 ```
+
+## Trigonometric functions
