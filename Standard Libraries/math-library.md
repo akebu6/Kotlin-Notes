@@ -57,9 +57,25 @@ val c = hypot(a, b) // c is 5.0, function works with Double or Float
 https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.math/
 
 
+## Rounding functions
+> Rounding functions work with Float and Double types:
 
++ `floor(x)` returns the largest double value that is less than or equal to its argument and is equal to an integer;
++ `ceil(x)` returns the smallest double value that is greater than or equal to its argument and is equal to an integer;
++ `round(x)` returns the closest double value that is equal to an integer. Numbers like 3.5 or 4.5 are rounded to the nearest even integer. Also, you can use roundToInt() to round number and convert it to Int in one function!
+```js
+val floor = floor(3.78) // 3.0
+val ceil = ceil(4.15)   // 5.0
 
+val negativeFloor = floor(-3.78)  // -4.0
+val negativeCeil = ceil(-4.15)    // -4.0
 
+val roundDown = round(4.15)       // 4.0
+val roundUp = (4.75).roundToInt() // 5, Int 
+
+val roundDownToEven = round(2.5)  // 2.0
+val roundUpToEven = round(3.5)    // 4.0
+```
 
 
 
