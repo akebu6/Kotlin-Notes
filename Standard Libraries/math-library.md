@@ -35,3 +35,25 @@ val logSum = ln(exp(2.0) * exp(3.0))  // 5
 ```
 
 ## Trigonometric functions
+The following functions work with Float and Double types and accept angles in radians:
++ `sin(x)` returns the trigonometric sine of the given angle in radians;
++ `cos(x)` returns the trigonometric cosine of the given angle in radians;
++ `tan(x)` returns the trigonometric tangent of the given angle in radians.
++ the library provides the constant PI that is the ratio of the circumference of a circle to its diameter.
+```js
+val pi = PI // pi is 3.1415...
+
+val sin = sin(pi / 2) // 1.0
+val cos = cos(pi) // -1.0
+val tan = tan(pi / 4) // 0.99999999... (an inaccurate result)
+```
+
+
+
+
+
+
+
+
+
+
