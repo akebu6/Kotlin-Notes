@@ -78,5 +78,16 @@ val roundUpToEven = round(3.5)    // 4.0
 ```
 
 
+#### Example
+```js
+val size1 = 6
+val size2 = 6
+val angle = 60
 
+val a = size1.toDouble()  // pow works with double
+val b = size2.toDouble()
+val radianAngle = angle * PI / 180 // cos requires an angle in radians
 
+val c = sqrt(a.pow(2.0) + b.pow(2.0) - 2 * a * b * cos(radianAngle))
+print(c) // 5.999999999999999, inaccurate, but the correct result
+```
