@@ -211,3 +211,8 @@ println(numbers.sum())      // 15
 println(vowels.sorted()) // [a, e, i, o, u, y]
 println(vowels.sortedDescending()) // [y, u, o, i, e, a]
 ```
+
+### Mutable List Alternative
++ `sort()` similar to `sorted()`
++ `reverse()` similar to `reversed()`
++ `shuffle()` similar to `shuffled()`
