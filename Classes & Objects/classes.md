@@ -38,3 +38,29 @@ class Patient {
 ```js
 var patient = Patient()
 ```
+- to get those properties' values, type in a dot and the property name after the object name:
+
+
+### Changing properties
+```js
+class Patient {
+    var name: String = "Unknown"
+    var age: Int = 0
+    var height: Double = 0.0
+}
+
+fun main() {
+    val john = Patient()
+    john.name = "John"
+    john.age = 30
+    john.height = 180.0
+
+    val alice = Patient()
+    alice.name = "Alice"
+    alice.age = 22
+    alice.height = 165.0
+
+    println("${john.name}: ${john.age} yrs, ${john.height} cm")
+    println("${alice.name}: ${alice.age} yrs, ${alice.height} cm")
+}
+```
