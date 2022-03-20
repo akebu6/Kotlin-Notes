@@ -22,3 +22,13 @@ val empty = MyClass()
 ### Writing properties
 + Properties are pretty similar to variables and values.
 + If you want to assign a value to a property during runtime, you declare it as a var, otherwise, a val is your choice.
++ Also, any property has a strict type. It can be a standard type, like a number or a string, or a custom type. So a property type can be your own class and even the same class where the property is declared.
++ A property that just stores data must somehow receive an initial value
+
+```js
+class Patient {
+    var name: String = "Unknown"
+    var age: Int = 0
+    var height: Double = 0.0
+}
+```
