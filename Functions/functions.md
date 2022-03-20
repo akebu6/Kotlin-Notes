@@ -94,3 +94,10 @@ fun sayHello(): Unit = println("Hello")
 
 fun isPositive(number: Int): Boolean = number > 0
 ```
+
+### Functions with default arguments
+- Kotlin can assign default values to function parameters in the function declaration. To invoke this function, you can omit the arguments with the default values, or you can invoke it in a usual way.
+```js
+fun printLine(line: String = "", end: String = "\n") = print("$line$end")
+```
+- We cannot pass the second argument without the first one. Kotlin cannot understand that we want to assign a value to the second parameter only.
