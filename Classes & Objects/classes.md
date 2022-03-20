@@ -32,3 +32,9 @@ class Patient {
     var height: Double = 0.0
 }
 ```
+
+### Accessing properties
+- first create an object
+```js
+var patient = Patient()
+```
