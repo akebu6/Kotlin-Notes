@@ -24,3 +24,9 @@
 + O(n log n) (log-linear time);
 + O(n^k) (polynomial time);
 + O(n!) (factorial time).
+
+#### arranging them according to effectiviness
+<img src="https://ucarecdn.com/a59bc4ff-df5e-460b-9e58-27e88e9ae228/" />
+
+
+
