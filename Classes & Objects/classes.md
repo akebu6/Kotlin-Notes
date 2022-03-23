@@ -73,8 +73,54 @@ val size = Size()
 ```
 - Every class needs to have a constructor, so if it isn't explicitly defined, the compiler automatically generates a default constructor, which only creates an object and doesn't have any logic inside.
 
+### Primary constructor
+- it just initializes an instance of a class and its properties
+- To define a primary constructor, you should put class initialization arguments in the parentheses after the class name.
+```js
+class Size(width: Int, height: Int) {
+    val width: Int = width
+    val height: Int = height
+    val area: Int = width * height
+}
+```
+- Kotlin's primary constructor allows you to omit the keyword.
+- You can also define a constructor as follows:
+```js
+class Size constructor(width: Int, height: Int) {
+    val width: Int = width
+    val height: Int = height
+    val area: Int = width * height
+}
+```
 
+### Property declarations
+- You can put simple property declarations inside the primary constructor.
+- To declare a read-only property, put the keyword val in the parentheses before the argument name. For a mutable property, use the keyword var
+```js
+class Size(val width: Int, height: Int) {
+    val height: Int = height
+    val area: Int = width * height
+}
+```
 
+### Default and named arguments
+```js
+class Size(var width: Int = 1, var height: Int = 1) {
+    val area: Int = width * height
+}
+```
+- When creating an object of a class with default values in the primary constructor, you can use the default values by omitting the arguments
+- You can either provide values without property names or use named arguments when creating instances of a class
+```js
+val size1 = Size(3, 5) // width == 3, height == 5
+val size2 = Size(width = 3, height = 5) // width == 3, height == 5
+val size3 = Size(height = 5, width = 3) // width == 3, height == 5
+```
+- You can also omit some of the properties with default values when creating an object. Keep it in mind though, if you break the order of the arguments in the primary constructor, you should always use named arguments:
+```js
+val sizeWide = Size(10) // width == 10, height == 1
+val sizeHigh = Size(height = 10) // width == 1, height == 10
+```
 
 
 
