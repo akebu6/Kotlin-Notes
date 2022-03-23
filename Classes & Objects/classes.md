@@ -128,8 +128,50 @@ val sizeHigh = Size(height = 10) // width == 1, height == 10
 class Size(val width: Int, val height: Int)
 ```
 
+### Init
+- Primary constructors cannot contain any code: they only set the values of class properties based on the passed arguments
+- Sometimes, we want to set some of our properties based on other properties' values or other sources of information. In such cases, we would use initializer blocks, which are prefixed with the keyword init:
+```js
+class Size(_width: Int, _height: Int) {
+    var width: Int = 0
+    var height: Int = 0
 
+    init {
+        width = if (_width >= 0) _width else {
+            println("Error, the width should be a non-negative value")
+            0
+        }
+        height = if (_height >= 0) _height else {
+            println("Error, the height should be a non-negative value")
+            0
+        }
+    }
 
+```
+- The keyword init signifies a block of code that serves as an extension of the primary constructor
+- There may be several initializer blocks in the class body. In this case, property initializers and init blocks are executed in the order of their appearance:
+```js
+class Size(_width: Int, _height: Int) {
+    // 1: the width property is initialized
+    val width = _width
+
+    // 2: 1st init block is executed
+    init {
+        println("First initializer block that prints the width $width")
+    }
+
+    // 3: the height property is initialized
+    val height = _height
+
+    // 4: 2nd init block is executed
+    init {
+        println("Second initializer block that prints the height $height")
+    }
+
+    // 5: the area property is initialized
+    val area = width * height
+}
+```
 
 
 
