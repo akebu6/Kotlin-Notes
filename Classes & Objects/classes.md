@@ -64,3 +64,38 @@ fun main() {
     println("${alice.name}: ${alice.age} yrs, ${alice.height} cm")
 }
 ```
+
+### Constructors
+> are class members that initialize a new object of the class.
+
+```js
+val size = Size()
+```
+- Every class needs to have a constructor, so if it isn't explicitly defined, the compiler automatically generates a default constructor, which only creates an object and doesn't have any logic inside.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
