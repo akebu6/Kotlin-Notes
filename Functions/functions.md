@@ -128,7 +128,7 @@ val amount = calcEndDayAmount(
 ```js
 calcEndDayAmount(1000, ticketPrice = 10, soldTickets = 500)  // 6000
 ```
-- You can also use named and default arguments together
+- You can also use named and default arguments together but they must be called sequentially
 ```js
 fun calcEndDayAmount(startAmount: Int = 0, ticketPrice: Int, soldTickets: Int) =
         startAmount + ticketPrice * soldTickets
