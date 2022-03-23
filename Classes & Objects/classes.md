@@ -65,7 +65,7 @@ fun main() {
 }
 ```
 
-### Constructors
+## Constructors
 > are class members that initialize a new object of the class.
 
 ```js
@@ -120,6 +120,12 @@ val size3 = Size(height = 5, width = 3) // width == 3, height == 5
 ```js
 val sizeWide = Size(10) // width == 10, height == 1
 val sizeHigh = Size(height = 10) // width == 1, height == 10
+```
+
+### Single line classes
+- If there are no other class members left except the ones in the primary constructor, we can omit empty curly braces. Imagine that the area property is missing in our example
+```js
+class Size(val width: Int, val height: Int)
 ```
 
 
