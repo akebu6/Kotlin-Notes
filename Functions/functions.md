@@ -101,3 +101,18 @@ fun isPositive(number: Int): Boolean = number > 0
 fun printLine(line: String = "", end: String = "\n") = print("$line$end")
 ```
 - We cannot pass the second argument without the first one. Kotlin cannot understand that we want to assign a value to the second parameter only.
+
+### Named Arguments
+- make code readable and clear in function calls
+```js
+// function
+fun calcEndDayAmount(startAmount: Int, ticketPrice: Int, soldTickets: Int) =
+        startAmount + ticketPrice * soldTickets
+        
+// function call
+val amount = calcEndDayAmount(
+    startAmount = 1000,
+    ticketPrice = 10,
+    soldTickets = 500
+)
+```
