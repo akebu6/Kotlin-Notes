@@ -116,3 +116,15 @@ val amount = calcEndDayAmount(
     soldTickets = 500
 )
 ```
+- You can change the order of arguments in a function call with the help of named arguments. All you need to do is to specify the names in any order you want
+```js
+val amount = calcEndDayAmount(
+    ticketPrice = 10,
+    soldTickets = 500,
+    startAmount = 1000
+)
+```
+- You can also call a function with named and regular (positional) arguments, as long as named arguments are placed after positional ones
+```js
+calcEndDayAmount(1000, ticketPrice = 10, soldTickets = 500)  // 6000
+```
