@@ -173,8 +173,34 @@ class Size(_width: Int, _height: Int) {
 }
 ```
 
+### Nested Classes
+```js
+class Superhero {
+    class MagicCloak {
+    }
 
+    class Hammer {
+    }
+}
+```
+- the top class is known as the outer class
+- to access the elements, you need to create objects
+```js
+val cloak = Superhero.MagicCloak()
+val hammer = Superhero.Hammer()
+```
 
+### Inner Classes
+- A regular nested class cannot access members of its outer class. But a nested class marked as an inner class can.
+```js
+class Cat(val name: String) {
+    inner class Bow(val color: String) {
+        fun printColor() {
+            println("The cat named $name has a $color bow.")
+        }
+    }
+}
+```
 
 
 
