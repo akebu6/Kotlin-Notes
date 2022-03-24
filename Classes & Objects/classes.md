@@ -202,7 +202,18 @@ class Cat(val name: String) {
 }
 ```
 
-
+- You may encounter inner classes that have members with the same names as their outer classes. For example, both Cat and Bow may have the property color. How can you access the outer class members from the inner class in such cases? The qualified this expression will help! Write this@Cat.color in the inner class code and you will get the color of the outer class, while using color or this.color will always give you the color property of the current class
+```js
+class Cat(val name: String, val color: String) {
+    inner class Bow(val color: String) {
+        fun printColor() {
+            println("The cat named $name is ${this@Cat.color} and has a $color bow.")
+        }
+    }
+}
+```
+- An inner class can access all members of its outer class.
+- To access the inner class, you need to instantiate the outer class first, as inner classes are associated with an instance of their enclosing class.
 
 
 
