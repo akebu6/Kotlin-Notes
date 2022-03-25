@@ -27,3 +27,17 @@ class Object is
       instance = new Object()
     return instance
 ```
+- Instead of trying to maintain one instance of a class, you can maintain few instances. 
+- All it takes is a bit of change to getInstance() method and keeping more than one instance. 
+- But by doing this, you'll now work with different design pattern called multiton.
+
+
+### Usage of singleton
+- singleton should be used in situations when you need to keep only one instance of a class that is available to all clients
+- Another time when this pattern should be implemented is when you need to isolate your instance and have only singleton class control over it.
+
+
+### Problems
++ Singleton violates SRP (Single Responsibility Principle) by solving two problems at once. This could have a negative impact on your code because the solution for one problem can interfere with the solution for another.
++ Components of a program can have a bit too much information about each other.
++ It has a negative impact on a unit-testing and makes it harder.
