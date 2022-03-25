@@ -59,7 +59,66 @@ object PlayingField {
 }
 ```
 - When you use object declaration, the constructor is not available because Kotlin does it itself. 
+- To get an instance of our playing field, use PlayingField declaration. We can use it anywhere and it will return the same object every time.
+```js
+fun startNewGameTurn() {
+    val players = PlayingField.getAllPlayers()
+    if (players.length < 2) {
+        return println("The game cannot be continued without players")
+    }
+    for (player in players) {
+        nextPlayerTurn(player)
+    }
+}
 
+fun nextPlayerTurn(player: Player) {
+    if (!PlayingField.isPlayerInGame(player)) {
+        return println("Current player lost. Next...")
+    }
+    /* Player actions here */
+}
+```
+
+### Nested object
+- Object declaration can be nested in a class declaration. 
+- A nested class is created inside another class; it cannot be accessed without an outer class declaration.
+```js
+class OuterClass {  
+   //outer class code  
+    class NestedClass {  
+      //nested class code  
+    }  
+} 
+```
+- nested object construction
+```js
+class Player(val id: Int) {
+    object Properties {
+        /* Default player speed in playing field – 7 cells per turn */
+        val defaultSpeed = 7
+
+        fun calcMovePenalty(cell: Int): Int {
+            /* calc move speed penalty */
+        }
+    }
+}
+
+/* prints 7 */
+println(Player.Properties.defaultSpeed)
+```
+- The object Properties has the scope Player, which means we can access it only through Player.Properties. That's how you can create a singleton connected to a special class.
+- You can also use properties and functions from a nested object in the outer class. You can also use properties and functions from a nested object in the outer class.
+```js
+class Player(val id: Int) {
+    object Properties {
+        val defaultSpeed = 7
+    }
+    
+    val superSpeed = Properties.defaultSpeed * 2 // 14
+}
+```
+- You cannot use the properties and the functions of the outer class in the inner. 
+- As you can see, it's similar to static in the other languages. Kotlin doesn't provide static members by default, but you may use nested objects if you need something related to the class.
 
 
 
