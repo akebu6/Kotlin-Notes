@@ -226,8 +226,12 @@ println(Player.Factory.create(13).id)
 ```
 - we cannot create a companion object inside another singleton (or a companion object) because that violates the global access principle.
 
+### Analogue in other languages
+- If you come from another programming language, you may be a little confused by companion objects. The closest concept to it is static members. 
+- The keyword static means that fields and methods with this modifier are common for all objects of the class and can be used without creating an instance of the class. 
 
-
+**Note**
+Remember, a companion object is not equal to a Java static initializer. In Kotlin, it is a single nested object that wraps all methods and fields which are common for the whole class.
 
 
 
