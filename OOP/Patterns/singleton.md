@@ -121,8 +121,12 @@ class Player(val id: Int) {
 - As you can see, it's similar to static in the other languages. Kotlin doesn't provide static members by default, but you may use nested objects if you need something related to the class.
 
 
-
-
+### Idioms
+```js
+object Resource {
+    val name = "Name"
+}
+```
 
 
 
