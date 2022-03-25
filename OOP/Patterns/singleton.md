@@ -128,7 +128,23 @@ object Resource {
 }
 ```
 
+### Companion object
+- Companion object
+```js
+class Player(val id: Int) {
+    companion object Properties {
+        /* Default player speed in playing field - 7 cells per turn */
+        val defaultSpeed = 7
 
+        fun calcMovePenalty(cell: Int): Int {
+            /* calc move speed penalty */
+        }
+    }
+}
+
+/* prints 7 */
+println(Player.Properties.defaultSpeed)
+```
 
 
 
