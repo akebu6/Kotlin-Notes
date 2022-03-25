@@ -129,7 +129,8 @@ object Resource {
 ```
 
 ### Companion object
-- Companion object
+- A companion object is a singleton attached to an outer class, and hence it cannot be accessed without accessing the outer class.
+- It allows us to understand that the current object is somehow connected with the outer class.
 ```js
 class Player(val id: Int) {
     companion object Properties {
