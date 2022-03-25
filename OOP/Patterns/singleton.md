@@ -146,6 +146,88 @@ class Player(val id: Int) {
 /* prints 7 */
 println(Player.Properties.defaultSpeed)
 ```
+- Until now, we've worked with a named companion object. However, unlike the case of a nested object, the name can be omitted.
+```js
+class Player(val id: Int) {
+    companion object {
+        /* Default player speed in playing field - 7 cells per turn */
+        val defaultSpeed = 7
+
+        fun calcMovePenalty(cell: Int): Int {
+            /* calc move speed penalty */
+        }
+    }
+}
+
+/* prints 7 */
+println(Player.defaultSpeed)
+```
+- accessing companion object
+```js
+/* prints 7 too */
+println(Player.Companion.defaultSpeed)
+```
+
+### Companion object and outer class
+- A companion is really closely associated with the outer class. You may freely use properties and functions from the companion object in the outer class.
+```js
+class Deck {
+    companion object {
+        val size = 10
+        val height = 2
+        fun volume(bottom: Int, height: Int) = bottom * height
+    }
+
+    val square = size * size             //100
+    val volume = volume(square, height)  //200
+}
+```
+- In this case, if you want to use a property from the companion, you must use the companion's name, or, if it wasn't named, the default name Companion:
+```js
+class Deck {
+    companion object {
+        val size = 10
+    }
+    val size = 2
+    val square = Companion.size * Companion.size // 100
+}
+```
+
+### Limitations of Companion Objects
+- Only one companion object is available for each class.
+- However, we can create one companion object and several nested objects:
+```js
+class Player(val id: Int) {
+    companion object Properties {
+        /* Default player speed in playing field - 7 cells per turn */
+        val defaultSpeed = 7
+
+        fun calcMovePenalty(cell: Int): Int {
+            /* calc move speed penalty */
+        }
+    }
+
+    /* creates a new instance of Player */
+    object Factory {
+        fun create(playerId: Int): Player {
+            return Player(playerId)
+        }
+    }
+}
+
+/* prints 7 */
+println(Player.Properties.defaultSpeed)
+
+/* also prints 7 */
+println(Player.defaultSpeed)
+
+/* prints 13 */
+println(Player.Factory.create(13).id)
+```
+- we cannot create a companion object inside another singleton (or a companion object) because that violates the global access principle.
+
+
+
 
 
 
