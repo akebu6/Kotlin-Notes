@@ -41,3 +41,32 @@ class Object is
 + Singleton violates SRP (Single Responsibility Principle) by solving two problems at once. This could have a negative impact on your code because the solution for one problem can interfere with the solution for another.
 + Components of a program can have a bit too much information about each other.
 + It has a negative impact on a unit-testing and makes it harder.
+
+
+### Object declaration
+- This is a special class with an object keyword that creates a singleton. This keyword hides all complicated steps so you don't have to think about the ways to implement this pattern: just use object declaration.
+```js
+object PlayingField {
+
+    fun getAllPlayers(): Array<Player> {
+        /* ... */
+    }
+    
+    fun isPlayerInGame(player: Player): Boolean {
+        /* ... */
+    }
+
+}
+```
+- When you use object declaration, the constructor is not available because Kotlin does it itself. 
+
+
+
+
+
+
+
+
+
+
+
