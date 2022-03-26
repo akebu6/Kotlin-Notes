@@ -36,4 +36,7 @@ enum class Rainbow(val color: String, val rgb: String) {
         println("Color - $color, rgb - $rgb")
     }
 }
+
+val rgb = Rainbow.RED
+rgb.printFullInfo() // Color - Red, rgb - #FF0000
 ```
