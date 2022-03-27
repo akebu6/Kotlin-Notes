@@ -333,7 +333,21 @@ class Size {
 ```
 
 
+### Constructors delegation
+- If a class has a primary constructor, each secondary constructor needs to call the primary one, either directly or indirectly through another secondary constructor(s). This is called delegation.
+- Delegation to another constructor of the same class is done with the keyword this placed after the constructor arguments and before the constructor body:
+```js
+class Size(val width: Int, val height: Int) {
+    var area: Int = width * height
 
+    constructor(width: Int, height: Int, outerSize: Size) : this(width, height) {
+        outerSize.area -= this.area
+        println("Updated outer object's area is equal to ${outerSize.area}")
+    }
+}
+```
+- Delegation to the primary constructor becomes the first statement of a secondary constructor, so the properties are initialized before the secondary constructor code is executed
+- Initializer blocks, if present, are also executed before the secondary constructor. If a class has no primary constructor, the delegation happens implicitly.
 
 
 
