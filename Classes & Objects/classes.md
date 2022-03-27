@@ -216,12 +216,121 @@ class Cat(val name: String, val color: String) {
 - To access the inner class, you need to instantiate the outer class first, as inner classes are associated with an instance of their enclosing class.
 
 
+### Secondary Constructors
+- You can declare custom constructors for a class along with a primary constructor or without one.
+```js
+class Size {
+    var width: Int = 0
+    var height: Int = 0
 
+    constructor(_width: Int, _height: Int) {
+        width = _width
+        height = _height
+    }
+}
+```
+- Be careful: you have to either use an implicit constructor or declare your own, but you cannot use both at the same time:
+```js
+class Size {
+    var width: Int = 0
+    var height: Int = 0
 
+    constructor(_width: Int, _height: Int) {
+        width = _width
+        height = _height
+    }
+}
 
+val size = Size() // Error! No values passed for parameters _width and _height
+```
+- What you can do is create a replica of the default constructor explicitly (empty curly braces can be removed):
+```js
+// preferable solution
+class Size() { 
+    var width: Int = 0
+    var height: Int = 0
+}
 
+// or this way
 
+class Size {
+    var width: Int = 0
+    var height: Int = 0
 
+    constructor() {
+    }
+}
+```
+
+#### Multiple constructors
+- Every secondary constructor has to have a unique signature. You cannot use the same signature for the primary or any other constructor.
+- The constructor signature consists of the number, the types, and the order of the parameters.
+```js
+class Size {
+    var width: Int = 0
+    var height: Int = 0
+
+    constructor(_height: Int) {
+        height = _height
+    }
+
+    constructor(_width: Int, _height: Int) {
+        width = _width
+        height = _height
+    }
+
+    constructor(_width: Int, _height: Double) {
+        width = _width
+        height = _height.toInt()
+    }
+
+    constructor(_height: Double, _width: Int) {
+        width = _width
+        height = _height.toInt()
+    }
+}
+
+val size1 = Size(7) // uses 1st constructor
+val size2 = Size(0,7) // uses 2nd constructor
+val size3 = Size(0, 7.0) // uses 3rd constructor
+val size4 = Size(7.0, 0) // uses 4th constructor
+```
+
+### `this` keyword
+- implies that you are working with the particular class
+```js
+class Size {
+    var width: Int = 0
+    var height: Int = 0
+
+    constructor(width: Int, height: Int) {
+        this.width = width
+        this.height = height
+    }
+}
+```
+
+### Omitting default values
+- As you remember, if a property value is assigned in the constructor, you don't have to provide a default value:
+```js
+class Size {
+    val width: Int
+    val height: Int
+    val area: Int
+
+    constructor(width: Int, height: Int) {
+        this.width = width
+        this.height = height
+        this.area = width * height
+    }
+```
+- Note that you cannot use the val and var keywords in the secondary constructor.
+```js
+class Size {
+    constructor(val width: Int, val height: Int) { // error, val is not allowed
+    }
+}
+```
 
 
 
