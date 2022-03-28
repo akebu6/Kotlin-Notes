@@ -17,6 +17,7 @@ Click on a particular link in order to access the respective sections of the not
 * [Standard Input](#standard-input)
 * [Conditions & Loops](#conditions-&-loops)
 * [Operators](#operators)
+* [OOP](#oop)
 * [Frameworks & Libraries](frameworks-&-libraries)
 * [Kotlin Multiplatform Mobile](kotlin-multiplatform-mobile)
 
@@ -63,6 +64,8 @@ Click on a particular link in order to access the respective sections of the not
 ### Exceptions
    * [error](error)
    * [exceptions](exceptions)
+### OOP
+   * [call stacks](call-stacks)
 ### Frameworks
    * [ktor](ktor)
    * [koin](koin)
