@@ -13,3 +13,15 @@ city?.address
 city?.address?.street
 ((if (city == null) null else city.address)?.street)
 ```
+
+### Elvis Operator
+```js
+var name: String? = "Kotlin"
+val length: Int? = name?.length
+print(length ?: 0)
+```
+- The Elvis operator works like this: if the left-hand side of the expression is not null (name?.length), return it; otherwise, the right-hand side (0) is to return. You can also use return and throw expressions in the right part:
+```js
+val length: Int = name?.length
+    ?: throw Exception("The name is null")
+```
