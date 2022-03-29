@@ -25,3 +25,11 @@ print(length ?: 0)
 val length: Int = name?.length
     ?: throw Exception("The name is null")
 ```
+
+### The !! Operator
+- There is an easy way to invoke an NPE: the !! operator. The code won't crash only if you're a 100% sure that your variable won't be null:
+```js
+var name: String? = "Kotlin"
+print(name!!.length)
+```
+- This operator is used to stop the program when null is met.
