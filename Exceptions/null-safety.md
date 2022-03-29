@@ -33,3 +33,10 @@ var name: String? = "Kotlin"
 print(name!!.length)
 ```
 - This operator is used to stop the program when null is met.
+
+
+note:
+can be used in place of readln to avoid an NPE
+```js
+readlnOrNull() ?: error("No lines read")
+```
