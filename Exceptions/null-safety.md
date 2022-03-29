@@ -36,7 +36,16 @@ print(name!!.length)
 
 
 note:
-can be used in place of readln to avoid an NPE
+- can be used in place of readln to avoid an NPE
 ```js
 readlnOrNull() ?: error("No lines read")
+```
+- nullable boolean
+```js
+val b: Boolean? = ...
+if (b == true) {
+    ...
+} else {
+    // `b` is false or null
+}
 ```
