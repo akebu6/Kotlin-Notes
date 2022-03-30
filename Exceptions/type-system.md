@@ -61,3 +61,6 @@ fun throwIfNull(name: String?) {
 }
 ```
 - Like any other type, Nothing can be nullable with the help of a question mark suffix. Nothing? can only contain one value, null:
+
+**Summary**
+<img src="https://ucarecdn.com/d365efa2-c7bb-42cc-82ca-9be2ea2e6e90/" width=600px height=500px />
