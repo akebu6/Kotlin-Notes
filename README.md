@@ -4,22 +4,24 @@
 ## Sections
 Click on a particular link in order to access the respective sections of the notes.
 
-* [Variables](#variables)
-* [Exceptions](#exceptions)
-* [Types](#types)
-* [Arrays](#arrays)
-* [String Template](#string-template)
-* [Number Conversion](#number-conversion)
-* [Functions](#functions)
-* [Classes & Objects](#classes-&-objects)
-* [Coding Conventions](#coding-conventions)
-* [Lists](#lists)
-* [Standard Input](#standard-input)
-* [Conditions & Loops](#conditions-&-loops)
-* [Operators](#operators)
-* [OOP](#oop)
+* [Arrays](arrays)
+* [Classes & Objects](classes-&-objects)
+* [Coding Conventions](coding-conventions)
+* [Conditions & Loops](conditions-&-loops)
+* [Exceptions](exceptions)
 * [Frameworks & Libraries](frameworks-&-libraries)
+* [Functions](functions)
+* [Lists](lists)
 * [Kotlin Multiplatform Mobile](kotlin-multiplatform-mobile)
+* [Kotlin Standard Libraries](kotlin-standard-libraries)
+* [Number Conversion](#number-conversion)
+* [OOP](oop)
+* [Operators](operators)
+* [Standard Input](standard-input)
+* [String Template](string-template)
+* [Types](#types)
+* [Variables](#variables)
+
 
 ### Variables
    * [var](var)
