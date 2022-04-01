@@ -63,10 +63,6 @@ Click on a particular link in order to access the respective sections of the not
    * [type conversion](type-converion)
    * [type coercion](type-coercion)
 ### OOP
-  #### Patterns
-   * [SRP](srp)
-   * [design principles](design-principles)
-   * [singleton](singleton)
    * [basics](basics)
    * [bigO notation](bigO-notation)
    * [call stacks](call-stacks)
@@ -75,6 +71,10 @@ Click on a particular link in order to access the respective sections of the not
    * [inheritance](inheritance)
    * [polymorphism](polymorphism)
    * [stacks](stacks)
+   #### Patterns
+   * [SRP](srp)
+   * [design principles](design-principles)
+   * [singleton](singleton)
 ### Operators
    * [equality](equality)
    * [logical operators](logical-operators)
