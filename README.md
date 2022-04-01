@@ -4,25 +4,6 @@
 ## Sections
 Click on a particular link in order to access the respective sections of the notes.
 
-* [Arrays](arrays)
-* [Classes & Objects](classes-&-objects)
-* [Coding Conventions](coding-conventions)
-* [Conditions & Loops](conditions-&-loops)
-* [Exceptions](exceptions)
-* [Frameworks & Libraries](frameworks-&-libraries)
-* [Functions](functions)
-* [Lists](lists)
-* [Kotlin Multiplatform Mobile](kotlin-multiplatform-mobile)
-* [Kotlin Standard Functions](kotlin-standard-functions)
-* [Number Conversion](#number-conversion)
-* [OOP](oop)
-* [Operators](operators)
-* [Standard Input](standard-input)
-* [Standard Libraries](standard-libraries)
-* [String Template](string-template)
-* [Types](#types)
-* [Variables](#variables)
-
 ### Arrays
 ### Classes & Objects
    * [classes](classes)
