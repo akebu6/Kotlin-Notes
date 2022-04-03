@@ -45,3 +45,36 @@ val anyLetterPattern = "[a-z!?.A-Z]" // matches any letter as well as "!", "?", 
 
 
 ## Excluding characters
+- we write the hat character ^ as the first one in the set.
+```js
+val regex = "[^abc]".toRegex() // matches everything except "a", "b", and "c"
+
+"a".matches(regex) // false
+"b".matches(regex) // false
+"c".matches(regex) // false
+"d".matches(regex) // true
+```
+- The same works for ranges:
+```js
+val regex = "[^1-6]".toRegex()
+
+"1".matches(regex) // false
+"2".matches(regex) // false
+"0".matches(regex) // true
+"9".matches(regex) // true
+```
+
+
+## Avoiding characters in sets
+- The general rule is that you do not need to avoid special characters within sets if they are used in their literal meaning
+- For example, the set [.?!] will match a single period, a question mark, an exclamation mark, and nothing else. 
+- However, the characters used to define a set or a range should be avoided or put in a neutral position – in case we look for their literal symbols:
+  + to match the hyphen character, we should put it in the first or in the last position in the set: "[-a-z]" matches lowercase letters and the hyphen, and "[A-Z-]" matches uppercase letters and the hyphen;
+  + hat ^ does not need to be avoided if placed anywhere but the beginning. This way, the set "[^a-z^]" matches everything except for lowercase letters and the hat character;
+  + square brackets should always be escaped:
+```js
+val regex = Regex("[\\[\\]]") // matches "[" and "]"
+```
+
+
+## Alternations
