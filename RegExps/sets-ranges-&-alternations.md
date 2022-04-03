@@ -24,4 +24,24 @@ val pattern = "[ab]x[12]" // can match a or b followed by x followed by either 1
 - On the other hand, the order of characters within the set does not matter.
 
 
-### Ranges of characters
+## Ranges of characters
+- we can specify a range designated by the hyphen symbol `-`.
+- The character that precedes the hyphen denotes the starting point of the range; the character after the hyphen is the last character that falls into the range.
+- We can put characters into a set as a range if they immediately follow each other in the ASCII/Unicode encoding table.
+- This includes both alphabetically ordered letters and numeric values.
+```js
+val anyDigitPattern = "[0-9]" // matches any digit from 0 to 9
+```
+- The same works for letter ranges, such as `[a-z]` or `[A-Z]`
+- These patterns are case-sensitive; for a case-insensitive match, we can write the following regex:
+```js
+val anyLetterPattern = "[a-zA-Z]" // matches any letter "a", "b", ..., "A", "B", ...
+```
+- Note that although the range [A-z] is technically valid, it includes additional symbols that are placed between uppercase and lowercase letters in the ASCII table.
+- As you can see, you can easily put several ranges in one set and mix them with separate characters in any order:
+```js
+val anyLetterPattern = "[a-z!?.A-Z]" // matches any letter as well as "!", "?", and "."
+```
+
+
+## Excluding characters
