@@ -78,3 +78,17 @@ val regex = Regex("[\\[\\]]") // matches "[" and "]"
 
 
 ## Alternations
+- The vertical bar | is used to match character sequences either before or after the symbol:
+```js
+val regex = "yes|no|maybe".toRegex() // matches "yes", "no", or "maybe", but not "y" or "e"
+
+"no".matches(regex) // true
+```
+- This is useful in situations when we want to look for one of several particular words,
+- The vertical bar can be used together with parentheses, which designate the boundaries of alternating substrings: everything within the parentheses is an optional substring that can match the alternation block
+```js
+val scaryAnimal = "(b|r|go)at".toRegex()  // matches "bat", "rat", or "goat"
+val answer = "The answer is definitely (yes|no|maybe)".toRegex() 
+```
+- In general, alternations are quite similar to sets: they describe multiple alternatives that a particular part of the pattern can match.
+- However, while sets can match only a single character in the string, alternations are used to define multi-character alternatives.
