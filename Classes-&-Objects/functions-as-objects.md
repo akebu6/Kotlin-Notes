@@ -51,4 +51,39 @@ fun getScoringFunction(isCheater: Boolean): (Double) -> Double {
 - Also, we have another function which provides us one of the previous two functions.
 - So if we do val wantedFunction = getScoringFunction(false), the wantedFunction value will contain a reference to a grade function for an honest student.
 - Seeing the getScoringFunction function implementation, we can say that in this case the wantedFunction value contains a reference to the getRealGrade function.
--  
+
+
+## Function references as function parameters
+- Also, you can create functions that take other functions as arguments. Let's create such function:
+```js
+fun applyAndSum(a: Int, b: Int, transformation: (Int) -> Int): Int {
+    return transformation(a) + transformation(b)
+}
+```
+- It receives two integers, transforms them using the received transformation function, and returns the sum of the transformed integers. We can declare some transformation functions:
+```jsfun same(x: Int) = x
+fun square(x: Int) = x * x
+fun triple(x: Int) = 3 * x
+```
+- And then pass them to the former function:
+```js
+applyAndSum(1, 2, ::same)    // returns 3 = 1 + 2
+applyAndSum(1, 2, ::square)  // returns 5 = 1 * 1 + 2 * 2
+applyAndSum(1, 2, ::triple)  // returns 9 = 3 * 1 + 3 * 2
+```
+
+### Real-world usage
+- The String type has the filter method to filter symbols. How does it know which symbols to remove from the string and which ones to leave in it?
+- The answer is simple: this method takes a predicate as an argument and then uses it for internal computations.
+- A predicate is a function that takes an argument and returns a Boolean result. 
+- So in the filter method, the predicate says if the symbol should be left and has the `(Char) -> Boolean` type.
+- Let's try to use this method. If we want to remove dots from a string, we declare this predicate:
+```js
+fun isNotDot(c: Char): Boolean = c != '.'
+```
+- Then we can do something like this:
+```js
+val originalText = "I don't know... what to say..."
+val textWithoutDots = originalText.filter(::isNotDot)
+```
+- As a result, the textWithoutDots string is equal to "I don't know what to say".
