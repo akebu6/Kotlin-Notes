@@ -32,3 +32,23 @@ val sumObject = ::sum
 ```js
 val sumObject: (Int, Int) -> Int = ::sum
 ```
+
+## Functions returning other functions
+- function that returns an object
+ ```js
+ fun getRealGrade(x: Double) = x
+fun getGradeWithPenalty(x: Double) = x - 1
+
+fun getScoringFunction(isCheater: Boolean): (Double) -> Double {
+    if (isCheater) {
+        return ::getGradeWithPenalty
+    }
+
+    return ::getRealGrade
+}
+```
+- Here we have a real grade function, which returns its argument, and a grade with penalty function, which returns its argument minus one (in other words, the decrement of its argument).
+- Also, we have another function which provides us one of the previous two functions.
+- So if we do val wantedFunction = getScoringFunction(false), the wantedFunction value will contain a reference to a grade function for an honest student.
+- Seeing the getScoringFunction function implementation, we can say that in this case the wantedFunction value contains a reference to the getRealGrade function.
+-  
