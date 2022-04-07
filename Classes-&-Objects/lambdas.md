@@ -85,3 +85,28 @@ val textWithoutSmallDigits = originalText.filter {
 
 
 ## Capturing variables
++ The point is that all the variables and values which are visible where the lambda is created are visible inside the lambda too.
++ If a lambda uses a variable that is declared outside the lambda, then it's said that the lambda captures the variable.
++ In case of a captured value, the lambda can just read it. 
++ If a variable is captured, the lambda and the outside code can change it, and these changes will be visible in the lambda and in the outside code.
++ Example:
+```js
+var count = 0
+
+val changeAndPrint = {
+    ++count
+    println(count)
+}
+
+println(count)    // 0
+changeAndPrint()  // 1
+count += 10
+changeAndPrint()  // 12
+println(count)    // 12
+```
++ Example:
+```js
+fun placeArgument(value: Int, f: (Int, Int) -> Int): (Int) -> Int {
+    return { i -> f(value, i) }
+}
+```
