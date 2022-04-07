@@ -31,3 +31,34 @@ println(mul2(2, 3))  // prints "6" too
 
 
 ## Lambdas and syntactic sugar
+- There are ways to make the code more readable for human beings without changing the code logic. If there is such a way in a programming language and it relates to syntax, its name is syntactic sugar. 
+- example
+```js
+fun isNotDot(c: Char): Boolean = c != '.'
+val originalText = "I don't know... what to say..."
+val textWithoutDots = originalText.filter(::isNotDot)
+```
+- rewritting it as a lambda
+```js
+val originalText = "I don't know... what to say..."
+val textWithoutDots = originalText.filter({ c: Char -> c != '.' })
+```
+-  First of all, Kotlin infers types of many objects, and here specifying the c type isn't necessary:
+```js
+originalText.filter({ c -> c != '.' })
+```
+- Second, there are situations when the lambda is passed as the last argument. Kotlin provides a way to eliminate these bracket sequences ({ }), allowing to write the lambda outside the parentheses;
+```js
+originalText.filter() { c -> c != '.' }
+```
+- If the parentheses are left empty after this operation, you can remove them:
+```js
+originalText.filter { c -> c != '.' }
+```
+- Finally, when there is a single parameter in a lambda, there is an opportunity to skip it. The parameter is available under the `it` name. The final version of the code that removes dots is this:
+```js
+val originalText = "I don't know... what to say..."
+val textWithoutDots = originalText.filter { it != '.' }
+```
+
+## Complex lambdas
