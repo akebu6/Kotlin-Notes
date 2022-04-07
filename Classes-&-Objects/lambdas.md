@@ -62,3 +62,26 @@ val textWithoutDots = originalText.filter { it != '.' }
 ```
 
 ## Complex lambdas
+- Sometimes, the code in a lambda isn't short enough to fit in one line, so you need to split the code into lines. In this case, the last line inside the lambda is treated as the lambda return value:
+```js
+val textWithoutSmallDigits = originalText.filter {
+    val isNotDigit = !it.isDigit()
+    val stringRepresentation = it.toString()
+
+    isNotDigit || stringRepresentation.toInt() >= 5
+}
+```
+- Also, a lambda can contain earlier returns. They must be written using the qualified return syntax.
+- This means that after the return keyword the `@` symbol and the label name are written. The label name is usually the function name where the lambda was passed.
+```js
+val textWithoutSmallDigits = originalText.filter {
+    if (!it.isDigit()) {
+        return@filter true
+    }
+        
+    it.toString().toInt() >= 5
+}
+```
+
+
+## Capturing variables
