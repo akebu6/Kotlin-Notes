@@ -8,6 +8,7 @@ Click on a particular link in order to access the respective sections of the not
 ### Classes & Objects
    * [classes](classes)
    * [data classes](data-classes)
+   * [lambdas](lambdas)
    * [member functions](member-functions)
    * [objects](objects)
    * [property accessors](property-accessors)
