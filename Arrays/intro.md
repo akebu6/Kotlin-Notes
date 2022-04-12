@@ -74,3 +74,31 @@ println(numbers.size) // 5
 ```
 
 ### Accessing elements
+- You can change the values of array elements. Use the index to set a value in the array.
+- Setting the value by the index:
+```js
+array[index] = elem
+```
+- Getting the value by the index:
+```js
+val elem = array[index]
+```
+- Example
+```js
+val numbers = IntArray(3) // numbers: 0, 0, 0
+
+numbers[0] = 1 // numbers: 1, 0, 0
+numbers[1] = 2 // numbers: 1, 2, 0
+numbers[2] = numbers[0] + numbers[1] // numbers: 1, 2, 3
+
+println(numbers[0]) // 1, the first element
+println(numbers[2]) // 3, the last element
+```
+- Kotlin provides several convenient ways to access the first and the last elements of an array as well as to access the last index:
+```ja
+println(alphabet.first())   // 'a'
+println(alphabet.last())    // 'd'
+println(alphabet.lastIndex) // 3
+```
+
+### Comparing arrays
