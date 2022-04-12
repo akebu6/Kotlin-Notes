@@ -44,4 +44,26 @@ println(doubles.joinToString())
 - You cannot change the size of an array, but you can modify the elements.
 
 
-### 
+### Reading array from input
+- To read an array of a certain size from the console, we first need to create an array of some type with a known size.
+- Inside the parentheses, we should place readln(), with the help of which we can read input from the console.
+```js
+val numbers = IntArray(5) { readln().toInt() } // on each line single numbers from 1 to 5
+println(numbers.joinToString()) // 1, 2, 3, 4, 5
+```
+- If you want to read an array in a single line, use the following approach. 
+```js
+// here we have an input string "1 2 3 4 5"
+
+val numbers = readln().split(" ").map { it.toInt() }.toTypedArray()
+println(numbers.joinToString()) // 1, 2, 3, 4, 5
+```
+- There is also a way that allows you to ignore line breaks and extra spaces in the input string. You can do this with the help of regular expressions, which are often used in text searching and editing.
+```js
+val regex = "\\s+".toRegex()
+val str = "1 2\t\t3  4\t5  6"
+val nums = str.split(regex).map { it.toInt() }.toTypedArray()
+println(nums.joinToString()) // 1, 2, 3, 4, 5, 6
+```
+
+### Array size
