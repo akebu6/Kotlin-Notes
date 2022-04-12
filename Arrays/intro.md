@@ -67,3 +67,10 @@ println(nums.joinToString()) // 1, 2, 3, 4, 5, 6
 ```
 
 ### Array size
+- An array always has a size, that is, the number of elements. To obtain it, we need to take the value of the size property. It is a number of the Int type.
+```js
+val numbers = intArrayOf(1, 2, 3, 4, 5)
+println(numbers.size) // 5 
+```
+
+### Accessing elements
