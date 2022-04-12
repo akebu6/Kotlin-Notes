@@ -33,3 +33,15 @@ K, t, l
 
 
 ### Creating an array of a specified size
+- To create an array of a certain size, we need to write its type and pass it after the type name in round brackets (the constructor):
+```js
+val numbers = IntArray(5) // an array of 5 integer numbers
+println(numbers.joinToString())
+
+val doubles = DoubleArray(7) // an array of 7 doubles
+println(doubles.joinToString())
+```
+- You cannot change the size of an array, but you can modify the elements.
+
+
+### 
