@@ -5,6 +5,8 @@
 Click on a particular link in order to access the respective sections of the notes.
 
 ### Arrays
+   * [intro](intro)
+   * [string arrays](string-arrays)
 ### Classes & Objects
    * [classes](classes)
    * [data classes](data-classes)
