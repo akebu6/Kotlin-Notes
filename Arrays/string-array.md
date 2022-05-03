@@ -15,4 +15,14 @@ val newEmptyArray = emptyArray<String>()
 - The same actually applies to other types: an array created with emptyArray() can be filled with elements of any type that is defined.
 
 
-##
+## Accessing elements
+- you can access a certain element by its index:
+```js
+val stringArray = arrayOf("sagacity", "and", "bravery")
+print(stringArray[2])   // bravery
+```
+- Similar to working with any type of array
+
+
+## Outputting an array
+
