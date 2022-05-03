@@ -34,3 +34,26 @@ println(southernCross.joinToString())   //  Acrux, Gacrux, Imai, Mimosa
 
 
 ## Working with multiple arrays
++ String arrays can be added
+```js
+val southernCross = arrayOf("Acrux", "Gacrux", "Imai", "Mimosa")
+val stars = arrayOf("Ginan", "Mu Crucis")
+
+val newArray = southernCross + stars
+println(newArray.joinToString())    //  Acrux, Gacrux, Imai, Mimosa, Ginan, Mu Crucis
+```
++ String arrays can be compared
+ - You cannot use the operators == and != to compare arrays because they simply do not compare their contents. 
+ - With arrays, use the function contentEquals() instead:
+```js
+val firstArray = arrayOf("result", "is", "true")
+val secondArray = arrayOf("result", "is", "true")
+val thirdArray = arrayOf("result")
+
+println(firstArray.contentEquals(secondArray))  //  true
+println(firstArray.contentEquals(thirdArray))   //  false
+```
+- Note that it returns true only if the elements of the two arrays match completely and are arranged in the same order.
+
+
+##
