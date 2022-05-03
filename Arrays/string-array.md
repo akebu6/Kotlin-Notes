@@ -56,4 +56,35 @@ println(firstArray.contentEquals(thirdArray))   //  false
 - Note that it returns true only if the elements of the two arrays match completely and are arranged in the same order.
 
 
-##
+## Changing the array contents
+- No matter if you're using val or var, you can edit the values of the existing elements through their index:
+```js
+val southernCross = arrayOf("Acrux", "Gacrux", "Imai", "Mimosa")
+var stars = arrayOf("Ginan", "Mu Crucis")
+southernCross[1] = "star"
+stars[1] = "star"
+
+println(southernCross[1]) // star
+println(stars[1]) // star
+```
+- However, there is a great difference between val and var when it comes to reassignment. When you have a var array, you can change it by adding new elements to it.
+- Suppose we created an empty string array:
+```
+var southernCross = emptyArray<String>()
+```
+- Even if your array is not empty to begin with, you can still add elements in the same way:
+```js
+var southernCross = arrayOf("Acrux", "Gacrux", "Imai")
+southernCross += "Mimosa"
+println(southernCross.joinToString())  //  Acrux, Gacrux, Imai, Mimosa
+```
+
+### NOTE
+- In Kotlin, the arrays are in a way unchangeable. 
+- Even if the array is declared with var, it cannot really be edited.
+- In both examples, the array southernCross was actually re-created. In fact, we literally deleted the array and created another one instead.
+- So, we can add new elements if the array is declared as var. If you're using val, that is not possible:
+```js
+val southernCross = arrayOf("Acrux", "Gacrux", "Imai", "Mimosa")
+southernCross += "Ginan" // will not compile
+```
