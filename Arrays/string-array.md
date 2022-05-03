@@ -25,4 +25,12 @@ print(stringArray[2])   // bravery
 
 
 ## Outputting an array
+- To see what we get as a result, and, for example, print a string array, use the familiar function `joinToString()`:
+```js
+val southernCross = arrayOf("Acrux", "Gacrux", "Imai", "Mimosa")
+println(southernCross.joinToString())   //  Acrux, Gacrux, Imai, Mimosa
+```
+- Keep it in mind that `joinToString()` processes a single string of elements listed orderly and separated by a comma.
 
+
+## Working with multiple arrays
