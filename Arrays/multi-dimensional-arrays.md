@@ -85,3 +85,20 @@ println(arrayOfChar2D.contentDeepToString())	// [[k], [o, t], [l, i, n]]
 ```
 
 ## Multi-dimensional arrays (>2)
+- In each element of a two-dimensional array, you have another nested array.
+- You can imagine it as a cube or a box: it has exactly three dimensions — length, width and height.
+```js
+val array3D = arrayOf(
+    arrayOf(arrayOf(0,1), arrayOf(2,3)),
+    arrayOf(arrayOf(4,5), arrayOf(6,7))
+)
+
+println(array3D.contentDeepToString())  // [[[0, 1], [2, 3]], [[4, 5], [6, 7]]]
+```
+- Accordingly, in order to refer to an element of such an array, we need three indices:
+```js
+println(array3D[0][0][1])   // 1
+println(array3D[1][0][1])   // 5
+println(array3D[1][1][1])   // 7
+```
+- You can create arrays of other dimensions by analogy — 4, 5, 6, and so on — as you need. Just remember that an element of a multidimensional array has as many indices as dimensions of that array.
