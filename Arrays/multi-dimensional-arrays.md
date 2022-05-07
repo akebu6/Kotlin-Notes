@@ -40,3 +40,30 @@ print(array2D[1][0])  // 3
 print(array2D[1][1])  // 4
 print(array2D[1][2])  // 5
 ```
+
+## Creating 2D arrays of different types
+- You also can clearly define the type of elements of nested arrays:
+```js
+val arrayOfString2D = arrayOf(
+    arrayOf<String>("to", "be", "or"),
+    arrayOf<String>("not", "to", "be")
+)
+```
+- It is better to explicitly define the type of arrays using the arrayOf() constructor where necessary.
+- In order to create nested arrays of primitives, you can use arrays of a certain type, as we did for one-dimensional arrays: IntArray, LongArray, DoubleArray, FloatArray, CharArray, ShortArray, ByteArray, BooleanArray.
+- Example:
+```js
+val arrayOfChar2D = arrayOf(
+    charArrayOf('A', 'R', 'R'),
+    charArrayOf('A', 'Y', 'S')
+)
+```
+- nested arrays be can of different types
+```js
+val arrayOfString2D = arrayOf(
+    arrayOf("Practice", "makes", "perfect"),
+    arrayOf(1, 2)
+)
+```
+
+## Features of working with 2D arrays
