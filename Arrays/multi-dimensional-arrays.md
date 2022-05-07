@@ -67,3 +67,21 @@ val arrayOfString2D = arrayOf(
 ```
 
 ## Features of working with 2D arrays
+- you can use the `joinToString()` function. For nested arrays, it will also work. Only now you must specify the index of the nested array that you want to convert to a string:
+```js
+val arrayString = arrayOf(
+    arrayOf("A", "R", "R", "A", "Y")
+)
+print(arrayString[0].joinToString())    // A, R, R, A, Y
+```
+- In the case of multi-dimensional arrays, this will not always be convenient. In order to get all array contents in a single string, you can use the function `contentDeepToString()`:
+```js
+val arrayOfChar2D = arrayOf(
+charArrayOf('k'),
+charArrayOf('o', 't'),
+charArrayOf('l', 'i', 'n'))
+
+println(arrayOfChar2D.contentDeepToString())	// [[k], [o, t], [l, i, n]]
+```
+
+## Multi-dimensional arrays (>2)
