@@ -6,6 +6,7 @@ Click on a particular link in order to access the respective sections of the not
 
 ### Arrays
    * [intro](intro)
+   * [multidimensional arrays](multidimensional-arrays)
    * [string arrays](string-arrays)
 ### Classes & Objects
    * [classes](classes)
