@@ -46,4 +46,16 @@ val line = File(fileName).readText(Charsets.US_ASCII)
 - We can also check the existence of a file with `exists()` method, which will return false in case of a missing file and true if Kotlin found it
 - Actually, you can use any method from File, for example, `length()` or `delete()`.
 
+## readLines
+> provides the functionality of reading files for each line and store it in List:
 
+```js
+val fileName = "src/reading.txt"
+val lines = File(fileName).readLines()
+for (line in lines){
+    println(line)
+}
+```
+- This method has the same size limitations and charset specification as readText().
+
+## readBytes
