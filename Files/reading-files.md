@@ -11,13 +11,13 @@ Kotlin or Java,
 Java or C++.
 ```
 - We put it in src folder, and now we can read it with our readText() method:
-```
+```js
 val fileName = "src/reading.txt"
 val lines = File(fileName).readText()
 print(lines)
 ```
 - Instead of reading our file right away to a String variable, we can create a reference first and then read the text later:
-```
+```js
 val fileName = "src/new.txt"
 val file = File(fileName)
 val lines = file.readText()
@@ -25,7 +25,7 @@ print(lines)
 ```
 - As you see, we made a mistake and tried to read a different file – new.txt. If there is no such file in the filesystem, then `NoSuchFileException` is thrown.
 - You can catch and process it as a usual Kotlin's exception, it's totally up to you. Now we can fix our example and continue:
-```
+```js
 val fileName = "src/reading.txt"
 val file = File(fileName)
 if (file.exists()) { // checks if file exists
@@ -36,7 +36,7 @@ if (file.exists()) { // checks if file exists
 - Actually, our file variable didn't open the file, it just provided a reference with the path to it. 
 - What's more, readText() automatically opened and closed the file!
 - We can also provide specific charset for reading the file:
-```
+```js
 val line = File(fileName).readText(Charsets.US_ASCII)
 ```
 
@@ -59,3 +59,14 @@ for (line in lines){
 - This method has the same size limitations and charset specification as readText().
 
 ## readBytes
+> may be helpful if you need to store file contents as an array of bytes:
+```js
+val lines = File(fileName).readBytes()
+```
+- this function returns the ByteArray.
+- The Array structure is similar to the MutableList, you cannot resize it, but you can modify elements. 
+- You can easily convert MutableList to ByteArray and vice versa with `toByteArray()` and `toMutableList()` functions.
+- It's still not recommended using this option with large files (2 Gb or more). 
+- This method is used as an implementation of readText() function with conversion to String in Kotlin source files.
+
+
