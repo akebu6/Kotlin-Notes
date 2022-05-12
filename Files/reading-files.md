@@ -70,3 +70,11 @@ val lines = File(fileName).readBytes()
 - This method is used as an implementation of readText() function with conversion to String in Kotlin source files.
 
 
+## forEachLine
+> is the recommended way of reading large files:
+```js
+val fileName = "src/reading.txt"
+File(fileName).forEachLine { println(it) }
+```
+- This lambda reading approach provides an action (println() in our case) for each line.
+- It's always a possibility that the file you're going to read has already been opened in another process, or it might have access restrictions. In such cases, `AccessDeniedException` is thrown.
