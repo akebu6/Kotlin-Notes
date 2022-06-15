@@ -27,7 +27,7 @@ Click on a particular link in order to access the respective sections of the not
    * [custom exceptions](custom-exceptions)
    * [error](error)
    * [exceptions](exceptions)
-   * [null safety](null-safety) ]
+   * [null safety](null-safety) 
    * [nullable & non-nullable types](nullable-&-non-nullable-types)
    * [type system](type-system)
 ### Frameworks
