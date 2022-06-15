@@ -30,6 +30,8 @@ Click on a particular link in order to access the respective sections of the not
    * [null safety](null-safety) 
    * [nullable & non-nullable types](nullable-&-non-nullable-types)
    * [type system](type-system)
+### Files
+   * [reading files](reading-files)
 ### Frameworks
    * [ktor](ktor)
    * [koin](koin)
