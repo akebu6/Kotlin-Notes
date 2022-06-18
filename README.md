@@ -10,6 +10,7 @@ Click on a particular link in order to access the respective sections of the not
    * [intro](intro)
    * [multidimensional arrays](multidimensional-arrays)
    * [string arrays](string-arrays)
+### Binary Arithmetic
 ### Classes & Objects
    * [classes](classes)
    * [data classes](data-classes)
