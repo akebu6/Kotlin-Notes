@@ -32,6 +32,7 @@ Click on a particular link in order to access the respective sections of the not
    * [type system](type-system)
 ### Files
    * [reading files](reading-files)
+   * [writing files](writing-files)
 ### Frameworks
    * [ktor](ktor)
    * [koin](koin)
