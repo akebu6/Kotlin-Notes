@@ -80,6 +80,7 @@ Click on a particular link in order to access the respective sections of the not
 ### Types
    * [bigIntger](bigIntger)
    * [bigDecimal](bigDecimal)
+   * [bytes to bits conversion table](bytes-to-bits-conversion-table)
    * [boolean](boolean)
    * [char](char)
    * [floating types](floating-types)
