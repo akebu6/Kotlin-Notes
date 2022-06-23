@@ -2,6 +2,8 @@
 > These are all my notes I will be while learning Kotlin and will be updated regularly
 
 ## How to Contribute
+- You can simply edit the readme file if you want to make changes to it.
+- If you want to add your own notes, fork the repo to your account then clone it to you local machine. Make the changes on your local machine and then push them to your remote and finally create a PR following the convetional **GitHub Commit Messages**
 
 ## Sections
 Click on a particular link in order to access the respective sections of the notes.
