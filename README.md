@@ -72,6 +72,9 @@ Click on a particular link in order to access the respective sections of the not
    * [equality](equality)
    * [logical operators](logical-operators)
    * [relational operators](relational-operators)
+### RegExp
+   * [basics](basics)
+   * [regexps](regexps)
 ### Standard Input
    * [user input](user-input)
 ### Standard Libraries
@@ -91,7 +94,7 @@ Click on a particular link in order to access the respective sections of the not
 ### Variables
    * [var](var)
    * [val](val)
-   * [Declarations](declarations)  
+   * [declarations](declarations)  
 
 
 
