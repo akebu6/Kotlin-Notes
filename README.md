@@ -75,6 +75,7 @@ Click on a particular link in order to access the respective sections of the not
 ### RegExp
    * [basics](basics)
    * [regexps](regexps)
+   * [sets, ranges & alternations](sets,-ranges-&-alternations)
 ### Standard Input
    * [user input](user-input)
 ### Standard Libraries
