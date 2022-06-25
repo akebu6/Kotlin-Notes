@@ -76,6 +76,7 @@ Click on a particular link in order to access the respective sections of the not
    * [basics](basics)
    * [regexps](regexps)
    * [sets, ranges & alternations](sets,-ranges-&-alternations)
+   * [shorthands](shorthands)
 ### Standard Input
    * [user input](user-input)
 ### Standard Libraries
