@@ -102,6 +102,8 @@ Each section is labelled with respect to what topic it falls under.
 
 Find me at [akebu6](https://twitter.com/akebu6)
 
+**Side Note:** some of the links do not work, kindly access the content through the code panel
+
 ### LICENSE
 
 © 2022 Akebu
