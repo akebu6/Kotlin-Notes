@@ -1,5 +1,5 @@
 # Kotlin-Notes
-> These are all my notes I will be while learning Kotlin and will be updated regularly
+> These are all my notes I made while learning Kotlin.
 
 ## How to Contribute
 - You can simply edit the readme file if you want to make changes to it.
@@ -102,7 +102,7 @@ Each section is labelled with respect to what topic it falls under.
 
 Find me at [akebu6](https://twitter.com/akebu6)
 
-**Side Note:** some of the links do not work, kindly access the content through the code panel
+**Side Note:** some of the links do not work, kindly access the content through the code panel, thanks!
 
 ### LICENSE
 
