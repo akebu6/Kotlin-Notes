@@ -10,7 +10,7 @@ data class Client(val name: String, val age: Int, val gender: String)
     var balance: Int = 0
   }
   ```
-  2. You can override all those functions, except for copy():
+2. You can override all those functions, except for copy():
   ```js
   data class Client(val name: String, val age: Int, val gender: String) {
     var balance: Int = 0
@@ -24,6 +24,30 @@ data class Client(val name: String, val age: Int, val gender: String)
   - Now balance field is involved in the toString() function.
 
    3. The primary constructor of a data class must have at least one parameter and all of those parameters must be val or var.
+   4. 2. Implementing the predefined functions
+  ```js
+  class Client(val name: String, val age: Int, val gender: String) {
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as Client
+
+        if (name != other.name) return false
+        if (age != other.age) return false
+        if (gender != other.gender) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        var result = name.hashCode()
+        result = 31 * result + age
+        result = 31 * result + gender.hashCode()
+        return result
+    }
+  }
+```
 
 ### Copy
 ```js
