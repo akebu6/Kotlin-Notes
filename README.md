@@ -8,6 +8,8 @@
 ## Sections
 Each section is labelled with respect to what topic it falls under.
 
+### 1's Complement
+### 2's Complement
 ### Arrays
    * [intro](intro)
    * [multidimensional arrays](multidimensional-arrays)
