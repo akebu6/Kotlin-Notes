@@ -1,4 +1,4 @@
-# Inheritanve
+# Inheritance
 - Inheritance is a relation between entities that we interpret as "is a" or "is a kind of" relation.
 - In the case of programming methods and attributes, it means that a child entity has every feature of the parent entity.
 - However, we can also change inherited features or define new ones for child classes.
