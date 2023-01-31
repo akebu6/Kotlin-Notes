@@ -23,6 +23,7 @@ Each section is labelled with respect to what topic it falls under.
    * [objects](objects)
    * [property accessors](property-accessors)
 ### Coding Conventions
+### Colour
 ### Conditions & Loops
    * [conditional expressions](conditional-expressions)
    * [jump expressions](jumps-expressions)
