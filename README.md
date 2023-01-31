@@ -24,6 +24,8 @@ Each section is labelled with respect to what topic it falls under.
    * [property accessors](property-accessors)
 ### Coding Conventions
 ### Colour
+   * [rgb](rgb)
+   * [image colour](image-colour)
 ### Conditions & Loops
    * [conditional expressions](conditional-expressions)
    * [jump expressions](jumps-expressions)
