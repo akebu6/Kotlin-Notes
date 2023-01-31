@@ -71,6 +71,7 @@ Each section is labelled with respect to what topic it falls under.
    * [SRP](srp)
    * [design principles](design-principles)
    * [singleton](singleton)
+### Persistent Storage
 ### Operators
    * [equality](equality)
    * [logical operators](logical-operators)
