@@ -72,7 +72,7 @@ Each section is labelled with respect to what topic it falls under.
    * [inheritance](inheritance)
    * [polymorphism](polymorphism)
    * [stacks](stacks)
-### Patterns
+  #### Patterns
    * [SRP](srp)
    * [design principles](design-principles)
    * [singleton](singleton)
@@ -106,7 +106,6 @@ Each section is labelled with respect to what topic it falls under.
    * [var](var)
    * [val](val)
    * [declarations](declarations)  
-
 
 
 Find me at [akebu6](https://twitter.com/akebu6)
