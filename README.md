@@ -46,6 +46,7 @@ Each section is labelled with respect to what topic it falls under.
 ### Functions
    * [functions](functions)
    * [scope](scope)
+### Image Libraies
 ### Kotlin Standard Functions
    * [toString](toString)
 ### Lists
