@@ -85,7 +85,6 @@ Each section is labelled with respect to what topic it falls under.
    * [regexps](regexps)
    * [sets, ranges & alternations](sets,-ranges-&-alternations)
    * [shorthands](shorthands)
-### RGB Colours
 ### Standard Input
    * [user input](user-input)
 ### Standard Libraries
