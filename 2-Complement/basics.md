@@ -23,3 +23,8 @@ Suppose, we would like to get the two's complement of the decimal number -5.
 The result is a signed binary number representing the decimal value −5 in the two's-complement form. The first bit equal to 1 means that the presented value is negative.
 
 One's complement can be converted from two's complement by subtracting 1.
+
+# Dealing with Signed Zero
+Why using two's complement is simpler and easier in practice?
+
+Well, in one's complement notation, zero can be both positive `(00...00)` and negative `(11...11)` which are both inversions of each other. It brings additional problems to the computer because the computer must check for a negative zero. But since two's complement of zero is also zero, two's complement notation has no such problems!
