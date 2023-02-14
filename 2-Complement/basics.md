@@ -28,3 +28,12 @@ One's complement can be converted from two's complement by subtracting 1.
 Why using two's complement is simpler and easier in practice?
 
 Well, in one's complement notation, zero can be both positive `(00...00)` and negative `(11...11)` which are both inversions of each other. It brings additional problems to the computer because the computer must check for a negative zero. But since two's complement of zero is also zero, two's complement notation has no such problems!
+
+# Binary Arithmetics
+- Another advantage of two's complement notation is that compared with one's complement notation, arithmetic operations for positive and negative numbers proceed exactly the same, so we don't need to memorize additional rules for adding and subtracting negative numbers. 
+- Since we take into account only the first N bits in N-bit two's complement notation, a carry to the 9th bit, which we don't have, simply vanishes away. Let's try subtraction – subtract -3 (11111101 in binary) from 100 (1100100 in binary):
+- Again, a borrow from the non-existent 9th digit vanishes away. That's the difference – in one's complement binary arithmetics, the carry or borrow was wrapped around to the rightmost digit (so we were adding or subtracting 1), in two's complement it's simply ignored. Which actually makes sense: remember that two's complement of a number is its one's complement plus one? Well, here is that 1!
+
+
+
+
