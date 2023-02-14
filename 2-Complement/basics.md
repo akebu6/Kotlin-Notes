@@ -1,5 +1,6 @@
 # Getting the two's complement
-- Two's complement is one's complement plus one
+> Two's complement is one's complement plus one
+
 - In two's complement notation, a non-negative number is represented by its ordinary binary representation.
 - The two's complement form of a negative number can be easily gotten from one's complement.
 - Simply find N-bit's one's complement of a number and add 1 to it.
