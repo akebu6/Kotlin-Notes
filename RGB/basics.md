@@ -26,3 +26,9 @@
 | green | (0,255,0) | #00FF00 |
 | thistle | (216,191,216) | #D8BFD8 |
 
+# Digital devices and printing
+- It is not rare that the same colors in the design layouts of the site and in the printing products do not look the same due to minor differences in intensity. 
+- This is because the RGB color model is needed to create images that will be displayed on the screens of digital devices. RGB is also often used when selecting colors to be viewed in a browser. 
+- For example, when working on the appearance of web pages, you can use RGB to set the color of their specific parts.
+- Layouts for the press are always executed in CMYK as this is the only color model the printers can work with, so they automatically treat any color as `CMYK`. 
+- The abbreviation `CMYK` refers to the names of the basic ink colors used for the four-colors press: `cyan, magenta and yellow`. The letter `K` indicates key color ink (black). CMYK color coverage is smaller than that of RGB, so the printed images may look a little duller than on a computer screen.
