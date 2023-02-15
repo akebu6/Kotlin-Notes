@@ -10,3 +10,19 @@
 | oldLace | (253, 245, 230) |
 | paleTurquoise| (175, 238, 238) |
 | thistle | (216, 191, 216) |
+
+
+# RGB and HEX
+- Each RGB color can be represented in the hexadecimal system (HEX).
+- It looks like this: `#RRGGBB`, where the first couple of digits is responsible for red, the second for green and the third for blue
+
+#### Examples
+| name | RGB | HEX |
+| ---- | ---- | ---- |
+| black | (0,0,0) | #000000 |
+| red | (255,0,0) | #FF0000 |
+| white | (255,255,255) | #FFFFFF |
+| blue | (0,0,255) | #0000FF |
+| green | (0,255,0) | #00FF00 |
+| thistle | (216,191,216) | #D8BFD8 |
+
