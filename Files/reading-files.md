@@ -1,6 +1,5 @@
 - The core class for file processing is File from the java.io package. 
 - Kotlin provides additional functionality over Java implementation through Extension Functions. 
-- Kotlin provides additional functionality over Java implementation through Extension Functions. 
 
 ## readText
 > helps you read the whole file in just one String variable.
