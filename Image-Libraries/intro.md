@@ -65,6 +65,58 @@ graphics.drawArc(200, 200, 100, 250, 45, 90)
 - It will then change the drawing color to orange and use it to draw an arc at (200, 200) of width 100 and height 250, with a start angle of 45 and an arc angle of 90.
 
 
+# Writing and Reading Images
+- nstead of programmatically creating an image from scratch, the j`avax.imageio.ImageIO` class offers many convenient methods for encoding (writing) and decoding (reading) images from files in the supported formats.
+- Format is the binary encoding of an image, and the following formats are supported out of the box: JPEG, PNG, BMP, WBMP, and GIF.
+- In order to save this newly created image, we will use the `ImageIO.write(im: BufferedImage, formatName: String, output: File)` method and save the image as a PNG file.
+```js
+import java.awt.image.BufferedImage
+import java.io.File
+import javax.imageio.ImageIO
+
+val height: Int = 800
+val width: Int = 600
+
+val image = BufferedImage(width, height, BufferedImage.TYPE_INT_RGB)
+val imageFile = File("myFirstImage.png")
+
+saveImage(image, imageFile)   
+
+fun saveImage(image: BufferedImage, imageFile: File) {
+  ImageIO.write(image, "png", imageFile)
+}
+```
+- With the file saved to disk, we can reuse it later to continue our work. 
+- We will continue by adding a red triangle to the image we have created so far.
+
+- The first step to do this is to read the file into a BufferedImage using the `ImageIO.read(File input)` function.
+```js import java.awt.Color
+import java.awt.image.BufferedImage
+import java.io.File
+import javax.imageio.ImageIO
+
+val imageFile = File("myFirstImage.png")
+
+val image: BufferedImage = ImageIO.read(imageFile)
+```
+- Secondly, we need to obtain a Graphics2D instance, and change the color to red.
+```js
+val graphics = image.createGraphics()
+
+graphics.color = Color.RED
+```
+- Finally, we will use the `Graphics2D.drawPolygon(IntArray, IntArray, Int)` function to draw our triangle. Remember that the parameters are: an array containing the X-axis coordinates, a second array containing the corresponding Y-axis coordinates, and the size of the arrays.
+```js
+graphics.drawPolygon(intArrayOf(10, 20, 30), intArrayOf(100, 20, 100), 3)
+```
+- Defining the form of a triangle is beyond the scope of the current lesson. 
+- However, note that the points must form an area greater than zero, and be non-collinear. Finally, in order to save the newly drawn triangle, let’s reuse the saveImage function defined above.
+```js
+saveImage(image, imageFile)
+```
+
+
+
 
 
 
