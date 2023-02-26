@@ -14,7 +14,7 @@
 - As such, they can easily be redrawn at any scale without aliasing.
 
 # Images in Kotlin
-- mages are represented by the `java.awt.Image class`.
+- Images are represented by the `java.awt.Image class`.
 - This is the class at the top of the hierarchy for all graphical images. 
 - For the purpose of this lesson, we will focus on an image subclass, `BufferedImage`.
 - A `BufferedImage` exposes the buffer of image data that can be read or modified.
@@ -66,7 +66,7 @@ graphics.drawArc(200, 200, 100, 250, 45, 90)
 
 
 # Writing and Reading Images
-- nstead of programmatically creating an image from scratch, the j`avax.imageio.ImageIO` class offers many convenient methods for encoding (writing) and decoding (reading) images from files in the supported formats.
+- Instead of programmatically creating an image from scratch, the j`avax.imageio.ImageIO` class offers many convenient methods for encoding (writing) and decoding (reading) images from files in the supported formats.
 - Format is the binary encoding of an image, and the following formats are supported out of the box: JPEG, PNG, BMP, WBMP, and GIF.
 - In order to save this newly created image, we will use the `ImageIO.write(im: BufferedImage, formatName: String, output: File)` method and save the image as a PNG file.
 ```js
