@@ -12,3 +12,11 @@
 - As they are maps of bits (hence the name bitmap), raster images cannot be scaled up or down to different resolutions without distortion (aliasing).
 - Vector images are points on a two-dimensional plane that are connected by lines and curves to form polygons and other geometric shapes. 
 - As such, they can easily be redrawn at any scale without aliasing.
+
+# Images in Kotlin
+- mages are represented by the `java.awt.Image class`.
+- This is the class at the top of the hierarchy for all graphical images. 
+- For the purpose of this lesson, we will focus on an image subclass, `BufferedImage`.
+- A `BufferedImage` exposes the buffer of image data that can be read or modified.
+
+# Creating Images
