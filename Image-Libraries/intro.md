@@ -20,3 +20,23 @@
 - A `BufferedImage` exposes the buffer of image data that can be read or modified.
 
 # Creating Images
+- Creating an image from scratch is as simple as creating an instance of BufferedImage.
+```js
+import java.awt.image.BufferedImage 
+
+val height: Int = 800
+val width: Int = 600
+val image = BufferedImage(width, height, BufferedImage.TYPE_INT_RGB)
+```
+- The last parameter in this particular constructor represents the image type. 
+- The TYPE_INT_RGB represents an image with 8 bits (or one byte) per color component, with the colors Red, Green, and Blue stored in 3 bytes.
+- Other examples of image types are:
+1. TYPE_INT_ARGB, which includes a transparency (sometimes called an alpha) component;
+2. TYPE_BYTE_GRAY, which only includes a single byte value to encode a grayscale color.
+
+# Editing Images
+
+
+
+
+
