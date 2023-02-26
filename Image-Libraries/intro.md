@@ -35,6 +35,35 @@ val image = BufferedImage(width, height, BufferedImage.TYPE_INT_RGB)
 2. TYPE_BYTE_GRAY, which only includes a single byte value to encode a grayscale color.
 
 # Editing Images
+- In order to edit images, we could directly access the pixel matrix in the BufferedImage; however, this is very inconvenient, especially if we want to draw more complex geometry, such as lines, polygons, text, or other images.
+- ckily, there is a more convenient way to do this. From a BufferedImage, we can create a `Graphics2D` by using the `createGraphics()` method.
+```js
+val graphics = image.createGraphics()
+```
+- This class offers a lot of convenient methods for two-dimensional drawing, such as:
+
+| function | use |
+| ---- | ---------- |
+| drawString(String, Int, Int) | Draws a string at the specified (x, y) coordinates |
+| drawString(String, Float, Float) | Draws a string at the specified (x, y) coordinates |
+| drawLine(x1: Int, y1: Int, x2: Int, y2: Int) | Draws a line between the given points (x1, y1) and (x2, y2) |
+| drawPolygon(IntArray, IntArray, Int) | 	
+Draws a polygon between the points with x-coordinates contained in the first IntArray and y-coordinates in the second IntArray. The third parameter is the number of points contained in the arrays |
+| drawOval(x: Int, y: Int, width: Int, height: Int) | Draws an oval at (x, y) with the specified width and height |
+| drawPolyLine(IntArray, IntArray, Int) | Draws a PolyLine. The parameters are the same as for drawing a polygon | 
+| drawRect(x: Int, y: Int, width: Int, height: Int) | Draws the outline of the specified rectangle |
+
+- Building on the newly created image above, drawing a string becomes as simple as:
+```js
+graphics.drawString("Playing with images", 80, 80)
+
+graphics.color = Color.ORANGE
+
+graphics.drawArc(200, 200, 100, 250, 45, 90)
+```
+- The code above will draw a white (the default color) string at the position (80, 80). 
+- It will then change the drawing color to orange and use it to draw an arc at (200, 200) of width 100 and height 250, with a start angle of 45 and an arc angle of 90.
+
 
 
 
