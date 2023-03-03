@@ -32,5 +32,55 @@ import java.awt.image.BufferedImage
 ![coordinates](https://user-images.githubusercontent.com/74776297/222819020-9c46defa-8870-46a3-94c8-180692f2aacd.png)
 
 
+# Read and Set pixel color
+- A pixel’s color can be read as an integer using the `getRGB(x, y)` function, where x and y are the column and row pixel positions respectively. 
+- A Kotlin integer has a size of 32 bits, so it can hold the color values for both the 24-bit RGB and 32-bit ARGB color schemes.
+- A pixel’s color can be set using the `setRGB(x, y, rgb)` function, where x and y are the column and row pixel positions respectively, and rgb is the pixel color as an integer.
+- In order to easily work with the acquired color value and avoid bitwise operations, the Color class should be used. Color belongs to the Java `java.awt` package and has to be imported:
+```js
+import java.awt.Color
+```
+- A Color instance can be initiated in many ways:
+1. `Color(rgb)`, where `rgb `is the integer value of 24-bit color read by the` getRGB()` function (without alpha channel);
+2. `Color(argb, true)`, where `argb` is the integer value of 32-bit color (with alpha channel);
+3. `Color(r, g, b)`, where `r, g, and b` are the values for each basic color;
+4. `Color(r, g, b, a)` where `r, g, and b` are the values for each basic color, and `a` is the value of the alpha channel.
+
+### Example
+In the following code example, an image file is read. Then, for each pixel in the created BufferedImage instance, the red color is set to 255, while the green and the blue colors remain unchanged. The BufferedImage instance is then saved as a new file. Note that a new Color instance has to be created.
+```js
+import java.io.File                   // Import the File class for file handling
+import javax.imageio.ImageIO          // Import the ImageIO class for reading and writing images
+import java.awt.image.BufferedImage   // BufferedImage Class
+import java.awt.Color                 // Color class
+
+fun main() {
+   val inputFile = File("24bit.png")  // Create a file instance in order to read the "24bit.png" image file
+
+   // Create a BufferedImage instance from the 24-bit image file data
+   val myImage: BufferedImage = ImageIO.read(inputFile)  
+
+   // myImage.width is the image width
+   // myImage.height is the image height
+   for (x in 0 until myImage.width) {               // For every column.
+       for (y in 0 until myImage.height) {          // For every row
+           val color = Color(myImage.getRGB(x, y))  // Read color from the (x, y) position
+
+           val g = color.green              // Access the Green color value
+           val b = color.blue               // Access the Blue color value
+           // Use color.red in case the Red color is needed
+
+           val colorNew = Color(255, g, b)  // Create a new Color instance with the red value equal to 255
+           myImage.setRGB(x, y, colorNew.rgb)  // Set the new color at the (x, y) position
+       }
+   }
+   val outputFileJpg = File("newImageFile.jpg")  // Output the file
+   ImageIO.write(myImage, "jpg", outputFileJpg)  // Create an image using the BufferedImage instance data
+}
+```
+- The picture below illustrates the above code applied to the left image in order to produce the image on the right.
+
+![red](https://user-images.githubusercontent.com/74776297/222821329-eeafb807-b4f5-4a95-9821-e1d853c096c5.png)
 
 
+3. s the integer value of 32-bit color (with alpha channel);
