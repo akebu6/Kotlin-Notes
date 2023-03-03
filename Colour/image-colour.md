@@ -83,4 +83,48 @@ fun main() {
 ![red](https://user-images.githubusercontent.com/74776297/222821329-eeafb807-b4f5-4a95-9821-e1d853c096c5.png)
 
 
-3. s the integer value of 32-bit color (with alpha channel);
+# Set the Alpha channel
+- In the following code example, a 32-bit image file with alpha channel is created. Alpha channel varies from 0 at the top of the image (total transparent) to 255 at the bottom (total opaque).
+```js
+import java.io.File
+import javax.imageio.ImageIO
+import java.awt.image.BufferedImage
+import java.awt.Color
+
+fun main() {
+    // Create a new BufferedImage instance with image size 256 X 256
+    // The first parameter is the image width, while the second is the image height
+    // The third parameter should be BufferedImage.TYPE_INT_ARGB for a 32-bit image
+    // or BufferedImage.TYPE_INT_RGB for a 24-bit image
+    val myImage: BufferedImage = BufferedImage(256, 256, BufferedImage.TYPE_INT_ARGB)
+
+    for (i in 0 until myImage.width) {
+        for (j in 0 until myImage.height) {
+            myImage.setRGB(i, j, Color(0, 255, 0, j).rgb)  // Green color with alpha channel value equal to j
+        }
+    }
+    val outputFile = File("alpha.png")         // Output the image
+    ImageIO.write(myImage, "png", outputFile)  // Create an image using the BufferedImage
+}
+```
+- The result of this code is the following image:
+
+![alpha03](https://user-images.githubusercontent.com/74776297/222821675-8eeaa932-11fc-40f6-90e1-1003293de04c.png)
+
+
+- And finally, here are some useful code snippets.
+```js
+// Get alpha value from Color instance
+val c = Color(255, 0, 0, 127)  // Create a color instance, with alpha equal to 127
+val alpha = c.alpha            // Get alpha channel value
+```
+- Here we create a new Color instance with alpha channel. The alpha channel value is available through the alpha property.
+```js
+// Create Color instance for pixel at (x, y) position, alpha channel is also set
+val color = Color(bI.getRGB(x, y), true)  // where bI is a BufferedImage instance
+```
+- The above code creates a new `Color` instance from the color of bI – the `BufferedImageinstance` at the position `(x, y)`. If we didn't use this particular initiation with the second parameter set to true, then the alpha channel value at the position `(x, y)` would be ignored and set to value `255`. This happens in the following code snippet. No matter what the alpha value was, it is disregarded and set to `255`.
+```js
+// Create Color instance for pixel at (x, y) position, only RGB color (alpha set to 255)
+val color = Color(bI.getRGB(x, y))  // where bI is a BufferedImage instance
+```
