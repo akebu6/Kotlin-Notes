@@ -20,3 +20,17 @@ The following picture is an example for the use of the alpha channel. It shows t
 
 **NOTE:** Note that the actual use of the alpha channel data depends on the program. The data may be ignored, used for transparency or in some other manner in order to create some complex image blending.
 
+# Image coordinate system
+- Java and consequently Kotlin use the `BufferedImage` class in order to handle images. It belongs to the `java.awt` package and is a subclass of the Image class. Therefore, it has to be imported into a program:
+```js
+import java.awt.image.BufferedImage
+```
+- A BufferedImage instance coordinate system is quite simple. 
+- A pixel position is defined by a pair of natural numbers that correspond to the pixel column and row respectively, with columns running from left to right and rows running from top to bottom. The starting row and column position number is zero. - In the `BufferedImage` instance positioning system, the first coordinate is the column number, and the second is the row number. 
+- For example, a pixel with the position (4, 7) is located in the 5th column (from left to right) and in the 8th row (from top to bottom).
+
+![coordinates](https://user-images.githubusercontent.com/74776297/222819020-9c46defa-8870-46a3-94c8-180692f2aacd.png)
+
+
+
+
