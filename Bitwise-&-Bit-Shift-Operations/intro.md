@@ -47,3 +47,79 @@ val bitwiseAndB = b and 1 // 100 & 001 = 000, the result is 0 =>
 // b is divided by 2 without a remainder
 ```
 
+# Bit-shift operators
+> In addition to the bitwise operators, Kotlin also provides bit-shift operators that can be used to shift the bits of an integer number from one position to another.
+> There are three bit-shift operators:
+
++ `shl` shifts the bit representation to the left by a certain number of specified bits, and zero bits are shifted into the low-order positions;
+
++ `shr` shifts the bit representation to the right by a certain number of specified bits. It fills the empty place with the value of the sign bit.
+
++ `ushr` is an unsigned bit-shift operator that shifts the bit pattern to the right by a certain number of specified bits. It is almost like shr, but the shifted values are filled up with zeros. The result of the ushr operator is always positive.
++ The following example illustrates how to perform fast multiplication and division by two using bit-shift operators:
+```js
+var value = 25   // binary: 0001 1001, decimal: 25
+
+value = value shl 1 // binary: 0011 0010, decimal: 50
+value = value shl 2 // binary: 1100 1000, decimal: 200
+
+var anotherVal = 14   // binary: 1110, decimal: 14
+anotherVal = anotherVal shr 1 // binary: 0111, decimal: 7
+```
++ As you can see, the result of the left-shift operator `shl` is equivalent to multiplication by two, and the result of the right-shift operator is equivalent to division by two. Let's generalize: when we use signed bit-shift operators, we perform multiplication or division of the left operand by 2 in the power of the right operand.
+```js
+var newVal = 25
+
+newVal = newVal shl 1 // 25 * 2^1 = 50
+newVal = newVal shl 3 // 50 * 2^3 = 400
+newVal = newVal shr 2 // 400 / 2^2 = 100
+```
++ Another example shows the calculation of the middle of a positive integer interval.
+```js
+val left = 10
+val right = 20
+
+val mid = (left + right) shr 1 // this is 15!
+```
+
++ Of course, this magic produces the same result as `(left + right) / 2`, but the bit-shift version is often considered a faster way to do that.
+
++ One more example illustrates the difference between `shr` and `ushr`:
+```js
+val number1 = 5
+val number2 = -5
+
+val shrNumber1 = number1 shr 1 // 0..0101 shr 1 = 0..0010, the result is 2
+val ushrNumber1 = number1 ushr 1 // 0..0101 ushr 1 = 0..0010, the result is 2
+val shrNumber2 = number2 shr 1 // 1..1011 shr 1 = 1..1101, the result is -3
+val ushrNumber2 = number2 ushr 1 // 1..1011 ushr 1 = 01..1101, the result is 2147483645
+
+```
++ `shr` shifts your bits to the right.
+
++ `ushr` also shifts to the right but fills up the leftmost bit with a zero.
+
+
++ As you can see, if you're doing bit shifts on positive values only, there is no difference between the operators. If you're also working with negative values, there is a big difference. In this case, `ushr` will flip the leftmost bit, so you'll get a positive value.
+
++ Since Kotlin 1.6, you can use `rotateLeft()` and `rotateRight()` for shifting a certain number of specified bits:
+```js
+val a = 4
+
+val shiftRight = a.rotateRight(1) // 0..0100.rotateRight(1) = 0..0010, the result is 2
+val shiftLeft = a.rotateLeft(1) // 0..0100.rotateLeft(1) = 0..1000, the result is 8
+```
+
++ Also here can be the following example:
+```js
+val b = 3
+
+val shiftLeft = a.rotateLeft(1) // 0..0011.rotateLeft(1) = 0..0110, the result is 6
+val shiftRight = a.rotateRight(1) // 0..0011.rotateRight(1) = 1..0001, the result is -2147483647
+```
++ `rotateRight()` changed our value in a strange way. What's the matter? It happens because int type represents a 32-bit integer value, so, when you shift your last bit by `rotateRight()`, bit on position 31 will be `1` and bit on position 0 will be 1.
+
+
+
+
+
