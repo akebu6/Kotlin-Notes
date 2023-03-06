@@ -120,6 +120,26 @@ val shiftRight = a.rotateRight(1) // 0..0011.rotateRight(1) = 1..0001, the resul
 + `rotateRight()` changed our value in a strange way. What's the matter? It happens because int type represents a 32-bit integer value, so, when you shift your last bit by `rotateRight()`, bit on position 31 will be `1` and bit on position 0 will be 1.
 
 
+# Precedence of bitwise and bit-shift operations
++ Like arithmetic operators, bitwise and bit-shift operators follow so-called precedence rules, which determine the order of performing and grouping operations in an expression. Operations with higher precedence are performed before those with lower precedence. Take a look at the list of operations in decreasing order of priority:
 
+1. Parentheses ( `(expr)` );
 
+2. Postfix increment/decrement `(expr++, expr--)`;
 
+3. Unary plus/minus, prefix increment/decrement `(-expr, ++expr, --expr)`;
+
+4. Multiplication, division, and modulus `( *, /, % )`;
+
+5. Addition and subtraction `( +, - )`;
+
+6. Assignment operations `( =, +=, -=, *=, /=, %=)`;
+
+7. bitwise and bit-shift operators (`and, or, xor, shr, shl, ushr)`.
+
++ `and`, `or`, `xor`, `shr`, `shl`, `ushr` are not operators themselves, and their order of execution in an expression is from left to right.
+
+**NOTE:** When operators have equal precedence, another rule is used to determine whether the evaluation should be performed from left to right or vice versa. It is called associativity.
+
++ All operators we have considered so far are evaluated from left to right, that is, in the way most familiar to you.
++ This means that in the following two expressions: `first or second and third` and `first or (second and third)`, operations will be executed in a different order and hence results may vary. If you go back to the example above `left + right shr 1` in a code snippet, you can see that here we don't need to use brackets, unlike in the case of its equivalent `(left + right) / 2`, because addition has higher precedence than all bit-shift operations. Remember these priorities when you combine arithmetic operations with the operations on bits.
