@@ -15,6 +15,7 @@ Each section is labelled with respect to what topic it falls under.
    * [multidimensional arrays](multidimensional-arrays)
    * [string arrays](string-arrays)
 ### Binary Arithmetic
+### Bitwise & Bit-shift Operators
 ### Classes & Objects
    * [classes](classes)
    * [data classes](data-classes)
