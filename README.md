@@ -1,5 +1,5 @@
 # Kotlin-Notes
-> These are all my notes I made while learning Kotlin.
+> A collection of all the notes I made whilst learning Kotlin.
 
 ## How to Contribute
 - You can simply edit the readme file if you want to make changes to it.
