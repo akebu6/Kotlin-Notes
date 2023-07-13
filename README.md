@@ -6,7 +6,6 @@
 - If you want to add your own notes, fork the repo to your account then clone it to you local machine. Make the changes on your local machine and then push them to your remote and finally create a PR following the convetional **GitHub Commit Messages**.
 
 ## Sections
-Each section is labelled with respect to what topic it falls under.
 
 ### 1's Complement
 ### 2's Complement
