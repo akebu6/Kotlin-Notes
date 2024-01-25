@@ -116,4 +116,4 @@ Find me at [akebu6](https://twitter.com/akebu6)
 
 © 2022 Akebu
 
-This repository is licensed under the MIT license. See LICENSE for details.
+This repository is licensed under the MIT license. See [LICENSE](https://github.com/akebu6/Kotlin-Notes/blob/main/LICENSE) for details.
