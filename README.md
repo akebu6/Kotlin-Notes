@@ -1,3 +1,5 @@
+![Kotlin Notes ](https://github.com/akebu6/Kotlin-Notes/assets/74776297/08923170-1a01-426b-891f-a3f8b211acb6)
+
 # Kotlin-Notes
 > A collection of all the notes I made whilst learning Kotlin.
 
