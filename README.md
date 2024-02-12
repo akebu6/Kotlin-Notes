@@ -89,7 +89,7 @@
    * [sets, ranges & alternations](sets,-ranges-&-alternations)
    * [shorthands](shorthands)
 ### Standard Input
-   * [user input](user-input)
+   * [user input](https://github.com/akebu6/Kotlin-Notes/blob/main/Standard%20Input/user%20input.md)
 ### Standard Libraries
    * [math library](https://github.com/akebu6/Kotlin-Notes/blob/main/Standard-Libraries/math-library.md)
    * [random](https://github.com/akebu6/Kotlin-Notes/blob/main/Standard-Libraries/random.md)
