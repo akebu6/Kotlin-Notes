@@ -96,14 +96,14 @@
 ### String Template
    * [working with string template](working-with-string-template)
 ### Types
-   * [bigIntger](bigIntger)
-   * [bigDecimal](bigDecimal)
-   * [bytes to bits conversion table](bytes-to-bits-conversion-table)
-   * [boolean](boolean)
-   * [char](char)
-   * [floating types](floating-types)
-   * [numbers](numbers)
-   * [string](string)
+   * [bigIntger](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/bigInteger.md)
+   * [bigDecimal](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/bigDecimal.md)
+   * [bytes to bits conversion table](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/bytes-to-bits-conversion-table.md)
+   * [boolean](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/boolean.md)
+   * [char](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/char.md)
+   * [floating types](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/floating-types.md)
+   * [numbers](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/numbers.md)
+   * [string](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/string.md)
 ### Variables
    * [var](https://github.com/akebu6/Kotlin-Notes/blob/main/Variables/var.md)
    * [val](https://github.com/akebu6/Kotlin-Notes/blob/main/Variables/val.md)
