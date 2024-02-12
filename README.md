@@ -94,7 +94,7 @@
    * [math library](math-library)
    * [random](random)
 ### String Template
-   * [working with string template](working-with-string-template)
+   * [working with string template](https://github.com/akebu6/Kotlin-Notes/blob/main/String-Template/basics.md)
 ### Types
    * [bigIntger](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/bigInteger.md)
    * [bigDecimal](https://github.com/akebu6/Kotlin-Notes/blob/main/Types/bigDecimal.md)
