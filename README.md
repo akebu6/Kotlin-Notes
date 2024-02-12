@@ -12,9 +12,9 @@
 ### 1's Complement
 ### 2's Complement
 ### Arrays
-   * [intro](intro)
-   * [multidimensional arrays](multidimensional-arrays)
-   * [string arrays](string-arrays)
+   * [intro](https://github.com/akebu6/Kotlin-Notes/blob/main/Arrays/intro.md)
+   * [multidimensional arrays](https://github.com/akebu6/Kotlin-Notes/blob/main/Arrays/multi-dimensional-arrays.md)
+   * [string arrays](https://github.com/akebu6/Kotlin-Notes/blob/main/Arrays/string-array.md)
 ### Binary Arithmetic
 ### Bitwise & Bit-shift Operators
 ### Classes & Objects
