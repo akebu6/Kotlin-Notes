@@ -91,8 +91,8 @@
 ### Standard Input
    * [user input](user-input)
 ### Standard Libraries
-   * [math library](math-library)
-   * [random](random)
+   * [math library](https://github.com/akebu6/Kotlin-Notes/blob/main/Standard-Libraries/math-library.md)
+   * [random](https://github.com/akebu6/Kotlin-Notes/blob/main/Standard-Libraries/random.md)
 ### String Template
    * [working with string template](https://github.com/akebu6/Kotlin-Notes/blob/main/String-Template/basics.md)
 ### Types
