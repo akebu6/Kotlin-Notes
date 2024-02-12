@@ -105,9 +105,9 @@
    * [numbers](numbers)
    * [string](string)
 ### Variables
-   * [var](var)
-   * [val](val)
-   * [declarations](declarations)  
+   * [var](https://github.com/akebu6/Kotlin-Notes/blob/main/Variables/var.md)
+   * [val](https://github.com/akebu6/Kotlin-Notes/blob/main/Variables/val.md)
+   * [declarations](https://github.com/akebu6/Kotlin-Notes/blob/main/Variables/declarations.md)  
 
 
 Find me at [akebu6](https://twitter.com/akebu6)
