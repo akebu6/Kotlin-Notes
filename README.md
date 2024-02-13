@@ -54,7 +54,7 @@
    * [scope](scope)
 ### Image Libraies
 ### Kotlin Standard Functions
-   * [toString](toString)
+   * [toString](https://github.com/akebu6/Kotlin-Notes/blob/main/Kotlin-Standard-Functions/toString.md)
 ### KMM
 ### Lists
    * [multidimensional lists](https://github.com/akebu6/Kotlin-Notes/blob/main/Lists/multi-dimensional-lists.md)
