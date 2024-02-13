@@ -27,8 +27,8 @@
 ### Coding Conventions
    * [conventions](conventions)
 ### Colour
-   * [rgb](rgb)
-   * [image colour](image-colour)
+   * [rgb](https://github.com/akebu6/Kotlin-Notes/blob/main/Colour/RGB.md)
+   * [image colour](https://github.com/akebu6/Kotlin-Notes/blob/main/Colour/image-colour.md)
 ### Conditions & Loops
    * [conditional expressions](https://github.com/akebu6/Kotlin-Notes/blob/main/Conditions-%26-Loops/conditional-expressions.md)
    * [jump expressions](https://github.com/akebu6/Kotlin-Notes/blob/main/Conditions-%26-Loops/jump-expressions.md)
