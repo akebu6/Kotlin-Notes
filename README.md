@@ -11,6 +11,7 @@
 
 ### 1's Complement
 ### 2's Complement
+   * [basics](https://github.com/akebu6/Kotlin-Notes/blob/main/2-Complement/basics.md)
 ### Arrays
    * [intro](https://github.com/akebu6/Kotlin-Notes/blob/main/Arrays/intro.md)
    * [multidimensional arrays](https://github.com/akebu6/Kotlin-Notes/blob/main/Arrays/multi-dimensional-arrays.md)
