@@ -18,12 +18,12 @@
 ### Binary Arithmetic
 ### Bitwise & Bit-shift Operators
 ### Classes & Objects
-   * [classes](classes)
-   * [data classes](data-classes)
-   * [lambdas](lambdas)
-   * [member functions](member-functions)
-   * [objects](objects)
-   * [property accessors](property-accessors)
+   * [classes](https://github.com/akebu6/Kotlin-Notes/blob/main/Classes-%26-Objects/classes.md)
+   * [data classes](https://github.com/akebu6/Kotlin-Notes/blob/main/Classes-%26-Objects/data-classes.md)
+   * [lambdas](https://github.com/akebu6/Kotlin-Notes/blob/main/Classes-%26-Objects/lambdas.md)
+   * [member functions](https://github.com/akebu6/Kotlin-Notes/blob/main/Classes-%26-Objects/member-functions.md)
+   * [objects](https://github.com/akebu6/Kotlin-Notes/blob/main/Classes-%26-Objects/objects.md)
+   * [property accessors](https://github.com/akebu6/Kotlin-Notes/blob/main/Classes-%26-Objects/property-accessors.md)
 ### Coding Conventions
    * [conventions](https://github.com/akebu6/Kotlin-Notes/blob/main/Coding-Conventions/conventions.md)
 ### Colour
