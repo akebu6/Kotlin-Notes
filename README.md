@@ -50,8 +50,8 @@
    * [kotless](kotless)
    * [kotest](kotest)
 ### Functions
-   * [functions](functions)
-   * [scope](scope)
+   * [functions](https://github.com/akebu6/Kotlin-Notes/blob/main/Functions/functions.md)
+   * [scope](https://github.com/akebu6/Kotlin-Notes/blob/main/Functions/scope.md)
 ### Image Libraies
    * [intro](https://github.com/akebu6/Kotlin-Notes/blob/main/Image-Libraries/intro.md)
 ### Kotlin Standard Functions
