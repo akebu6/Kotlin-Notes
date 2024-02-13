@@ -60,11 +60,11 @@
    * [multidimensional lists](multidimensional-lists)
    * [mutableLists](mutableLists)
 ### Number Conversion
-   * [decimal to binary](decimal-to-binary)
-   * [fractions decimal to binary](fractions-decimal-to-binary)
-   * [octal](octal)
-   * [type conversion](type-converion)
-   * [type coercion](type-coercion)
+   * [decimal to binary](https://github.com/akebu6/Kotlin-Notes/blob/main/Numeric-Converson/decimal-to-binary.md)
+   * [fractions decimal to binary](https://github.com/akebu6/Kotlin-Notes/blob/main/Numeric-Converson/fractions-decimal-to-binary.md)
+   * [octal](https://github.com/akebu6/Kotlin-Notes/blob/main/Numeric-Converson/octal.md)
+   * [type conversion](https://github.com/akebu6/Kotlin-Notes/blob/main/Numeric-Converson/type%20coercion.md)
+   * [type coercion](https://github.com/akebu6/Kotlin-Notes/blob/main/Numeric-Converson/type%20conversion.md)
 ### OOP
    * [basics](https://github.com/akebu6/Kotlin-Notes/blob/main/OOP/basics.md)
    * [bigO notation](https://github.com/akebu6/Kotlin-Notes/blob/main/OOP/bigO-notation.md)
