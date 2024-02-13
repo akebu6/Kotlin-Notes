@@ -84,10 +84,10 @@
    * [logical operators](logical-operators)
    * [relational operators](relational-operators)
 ### RegExp
-   * [basics](basics)
-   * [regexps](regexps)
-   * [sets, ranges & alternations](sets,-ranges-&-alternations)
-   * [shorthands](shorthands)
+   * [basics](https://github.com/akebu6/Kotlin-Notes/blob/main/RegExps/basics.md)
+   * [regexps](https://github.com/akebu6/Kotlin-Notes/blob/main/RegExps/regexps.md)
+   * [sets, ranges & alternations](https://github.com/akebu6/Kotlin-Notes/blob/main/RegExps/sets,-ranges-&-alternations.md)
+   * [shorthands](https://github.com/akebu6/Kotlin-Notes/blob/main/RegExps/shorthands.md)
 ### Standard Input
    * [user input](https://github.com/akebu6/Kotlin-Notes/blob/main/Standard%20Input/user%20input.md)
 ### Standard Libraries
