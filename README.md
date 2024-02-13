@@ -57,8 +57,8 @@
    * [toString](toString)
 ### KMM
 ### Lists
-   * [multidimensional lists](multidimensional-lists)
-   * [mutableLists](mutableLists)
+   * [multidimensional lists](https://github.com/akebu6/Kotlin-Notes/blob/main/Lists/multi-dimensional-lists.md)
+   * [mutableLists](https://github.com/akebu6/Kotlin-Notes/blob/main/Lists/mutableList.md)
 ### Number Conversion
    * [decimal to binary](https://github.com/akebu6/Kotlin-Notes/blob/main/Numeric-Converson/decimal-to-binary.md)
    * [fractions decimal to binary](https://github.com/akebu6/Kotlin-Notes/blob/main/Numeric-Converson/fractions-decimal-to-binary.md)
