@@ -76,9 +76,9 @@
    * [polymorphism](https://github.com/akebu6/Kotlin-Notes/blob/main/OOP/polymorphism.md)
    * [stacks](https://github.com/akebu6/Kotlin-Notes/blob/main/OOP/stacks.md)
   #### Patterns
-   * [SRP](srp)
-   * [design principles](design-principles)
-   * [singleton](singleton)
+   * [SRP](https://github.com/akebu6/Kotlin-Notes/blob/main/OOP/Patterns/SRP.md)
+   * [design principles](https://github.com/akebu6/Kotlin-Notes/blob/main/OOP/Patterns/design-principles.md)
+   * [singleton](https://github.com/akebu6/Kotlin-Notes/blob/main/OOP/Patterns/singleton.md)
 ### Persistent Storage
 ### Operators
    * [equality](https://github.com/akebu6/Kotlin-Notes/blob/main/Operators/equality.md)
