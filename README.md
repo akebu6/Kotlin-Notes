@@ -83,6 +83,8 @@
    * [equality](equality)
    * [logical operators](logical-operators)
    * [relational operators](relational-operators)
+### RGB
+   * [basics](https://github.com/akebu6/Kotlin-Notes/blob/main/RGB/basics.md)
 ### RegExp
    * [basics](https://github.com/akebu6/Kotlin-Notes/blob/main/RegExps/basics.md)
    * [regexps](https://github.com/akebu6/Kotlin-Notes/blob/main/RegExps/regexps.md)
