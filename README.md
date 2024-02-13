@@ -42,8 +42,8 @@
    * [nullable & non-nullable types](nullable-&-non-nullable-types)
    * [type system](type-system)
 ### Files
-   * [reading files](reading-files)
-   * [writing files](writing-files)
+   * [reading files](https://github.com/akebu6/Kotlin-Notes/blob/main/Files/reading-files.md)
+   * [writing files](https://github.com/akebu6/Kotlin-Notes/blob/main/Files/writing-files.md)
 ### Frameworks
    * [ktor](ktor)
    * [koin](koin)
