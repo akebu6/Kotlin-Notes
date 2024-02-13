@@ -35,12 +35,12 @@
    * [loops](loops)
    * [ranges](ranges)
 ### Exceptions
-   * [custom exceptions](custom-exceptions)
-   * [error](error)
-   * [exceptions](exceptions)
-   * [null safety](null-safety) 
-   * [nullable & non-nullable types](nullable-&-non-nullable-types)
-   * [type system](type-system)
+   * [custom exceptions](https://github.com/akebu6/Kotlin-Notes/blob/main/Exceptions/custom-exceptions.md)
+   * [error](https://github.com/akebu6/Kotlin-Notes/blob/main/Exceptions/error.md)
+   * [exceptions](https://github.com/akebu6/Kotlin-Notes/blob/main/Exceptions/exceptions.md)
+   * [null safety](https://github.com/akebu6/Kotlin-Notes/blob/main/Exceptions/null-safety.md) 
+   * [nullable & non-nullable types](https://github.com/akebu6/Kotlin-Notes/blob/main/Exceptions/nullable-&-non-nullable-types.md)
+   * [type system](https://github.com/akebu6/Kotlin-Notes/blob/main/Exceptions/type-system.md)
 ### Files
    * [reading files](https://github.com/akebu6/Kotlin-Notes/blob/main/Files/reading-files.md)
    * [writing files](https://github.com/akebu6/Kotlin-Notes/blob/main/Files/writing-files.md)
