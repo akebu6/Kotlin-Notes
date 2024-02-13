@@ -25,7 +25,7 @@
    * [objects](objects)
    * [property accessors](property-accessors)
 ### Coding Conventions
-   * [conventions](conventions)
+   * [conventions](https://github.com/akebu6/Kotlin-Notes/blob/main/Coding-Conventions/conventions.md)
 ### Colour
    * [rgb](https://github.com/akebu6/Kotlin-Notes/blob/main/Colour/RGB.md)
    * [image colour](https://github.com/akebu6/Kotlin-Notes/blob/main/Colour/image-colour.md)
