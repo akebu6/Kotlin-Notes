@@ -80,9 +80,9 @@
    * [singleton](singleton)
 ### Persistent Storage
 ### Operators
-   * [equality](equality)
-   * [logical operators](logical-operators)
-   * [relational operators](relational-operators)
+   * [equality](https://github.com/akebu6/Kotlin-Notes/blob/main/Operators/equality.md)
+   * [logical operators](https://github.com/akebu6/Kotlin-Notes/blob/main/Operators/logical%20operators.md)
+   * [relational operators](https://github.com/akebu6/Kotlin-Notes/blob/main/Operators/relational%20operators.md)
 ### RGB
    * [basics](https://github.com/akebu6/Kotlin-Notes/blob/main/RGB/basics.md)
 ### RegExp
