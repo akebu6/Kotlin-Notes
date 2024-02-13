@@ -30,10 +30,10 @@
    * [rgb](rgb)
    * [image colour](image-colour)
 ### Conditions & Loops
-   * [conditional expressions](conditional-expressions)
-   * [jump expressions](jumps-expressions)
-   * [loops](loops)
-   * [ranges](ranges)
+   * [conditional expressions](https://github.com/akebu6/Kotlin-Notes/blob/main/Conditions-%26-Loops/conditional-expressions.md)
+   * [jump expressions](https://github.com/akebu6/Kotlin-Notes/blob/main/Conditions-%26-Loops/jump-expressions.md)
+   * [loops](https://github.com/akebu6/Kotlin-Notes/blob/main/Conditions-%26-Loops/loops.md)
+   * [ranges](https://github.com/akebu6/Kotlin-Notes/blob/main/Conditions-%26-Loops/ranges.md)
 ### Exceptions
    * [custom exceptions](https://github.com/akebu6/Kotlin-Notes/blob/main/Exceptions/custom-exceptions.md)
    * [error](https://github.com/akebu6/Kotlin-Notes/blob/main/Exceptions/error.md)
