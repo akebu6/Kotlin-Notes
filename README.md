@@ -17,6 +17,7 @@
    * [string arrays](https://github.com/akebu6/Kotlin-Notes/blob/main/Arrays/string-array.md)
 ### Binary Arithmetic
 ### Bitwise & Bit-shift Operators
+   * [intro](https://github.com/akebu6/Kotlin-Notes/blob/main/Bitwise-%26-Bit-Shift-Operations/intro.md)
 ### Classes & Objects
    * [classes](https://github.com/akebu6/Kotlin-Notes/blob/main/Classes-%26-Objects/classes.md)
    * [data classes](https://github.com/akebu6/Kotlin-Notes/blob/main/Classes-%26-Objects/data-classes.md)
